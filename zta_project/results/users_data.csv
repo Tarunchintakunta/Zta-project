@@ -1,0 +1,51 @@
+user_id,name,role,location,department,risk_score,access_level,auth_method,failed_attempts,is_active
+USER-0001,Amanda Hale,manager,office,Finance,100,3,biometric,0,True
+USER-0002,Caitlin Edwards,contractor,office,Operations,100,1,password,0,True
+USER-0003,Darlene Walker,employee,office,Marketing,100,2,password,0,True
+USER-0004,Victor Stevens,admin,remote,Sales,100,5,mfa,0,True
+USER-0005,Richard Beard,employee,office,Marketing,100,2,password,0,True
+USER-0006,David Montoya,admin,hybrid,Sales,100,5,certificate,0,True
+USER-0007,Heather Roberts,manager,remote,Engineering,100,3,biometric,0,True
+USER-0008,Melissa Pollard,executive,office,IT,100,4,certificate,0,True
+USER-0009,Ricardo Herring,executive,remote,Engineering,100,4,mfa,0,True
+USER-0010,Joshua Gaines,contractor,hybrid,Operations,100,1,mfa,0,True
+USER-0011,Jennifer Mccoy,contractor,hybrid,Operations,100,1,mfa,0,True
+USER-0012,Tabitha Allen,manager,office,Engineering,100,3,biometric,0,True
+USER-0013,Jonathan Cooper,contractor,office,Operations,100,1,password,0,True
+USER-0014,Elizabeth Aguilar,admin,office,Sales,100,5,certificate,0,True
+USER-0015,Noah Serrano,admin,remote,HR,100,5,biometric,0,True
+USER-0016,Kimberly Mcdonald,manager,hybrid,IT,100,3,biometric,0,True
+USER-0017,Patricia Garza,employee,hybrid,Operations,100,2,mfa,0,True
+USER-0018,Peter Little,executive,remote,Engineering,100,4,mfa,0,True
+USER-0019,Donna Rivera,executive,hybrid,Operations,100,4,mfa,0,True
+USER-0020,Jeffrey Farrell,employee,office,Operations,100,2,password,0,True
+USER-0021,Anthony Reilly,executive,office,IT,100,4,certificate,0,True
+USER-0022,Albert Russell DDS,manager,office,Sales,100,3,biometric,0,True
+USER-0023,Alexandria Snyder,executive,office,Marketing,100,4,biometric,0,True
+USER-0024,Zachary Mckay III,executive,hybrid,Operations,100,4,biometric,0,True
+USER-0025,Kevin Jones Jr.,executive,remote,Marketing,100,4,biometric,0,True
+USER-0026,Kristen Bird,manager,office,Sales,100,3,biometric,0,True
+USER-0027,Maria Wallace,executive,remote,HR,100,4,mfa,0,True
+USER-0028,Charles Williamson,admin,hybrid,Sales,100,5,mfa,0,True
+USER-0029,Ryan Cole,executive,office,Engineering,100,4,mfa,0,True
+USER-0030,Shirley Santos,admin,office,Sales,100,5,biometric,0,True
+USER-0031,Brandon Harris,employee,remote,Operations,100,2,password,0,True
+USER-0032,Cheryl Martin,manager,remote,Sales,100,3,biometric,0,True
+USER-0033,Victor Perez,manager,office,HR,100,3,mfa,0,True
+USER-0034,Jennifer Payne,executive,remote,Marketing,100,4,biometric,0,True
+USER-0035,Melissa Lopez,contractor,office,Sales,100,1,mfa,0,True
+USER-0036,Colin Haley,contractor,remote,Sales,100,1,password,0,True
+USER-0037,Robert Frost,contractor,office,Engineering,100,1,password,3,True
+USER-0038,Thomas Williamson,executive,hybrid,IT,100,4,mfa,0,True
+USER-0039,Elizabeth Vega,employee,hybrid,Engineering,100,2,password,3,True
+USER-0040,Michael Kramer,admin,hybrid,IT,100,5,mfa,0,True
+USER-0041,Brooke Cox,executive,hybrid,Engineering,100,4,biometric,0,True
+USER-0042,Andrew Anderson,manager,remote,Sales,100,3,mfa,0,True
+USER-0043,Nicholas Gamble,employee,remote,IT,100,2,mfa,0,True
+USER-0044,Raymond Hamilton,executive,remote,Marketing,100,4,certificate,0,True
+USER-0045,Derek Meyer,admin,remote,Marketing,100,5,biometric,0,True
+USER-0046,Carrie Maldonado,admin,office,Engineering,100,5,certificate,0,True
+USER-0047,Tonya Bradford,executive,hybrid,HR,100,4,certificate,0,True
+USER-0048,Christopher Rose,executive,office,Engineering,100,4,biometric,0,True
+USER-0049,Michael Herrera,executive,remote,Sales,100,4,certificate,0,True
+USER-0050,Kenneth Goodman,executive,hybrid,Sales,100,4,biometric,0,True

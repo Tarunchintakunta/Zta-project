@@ -1,0 +1,1337 @@
+timestamp,user_id,device_id,app_id,action,granted,reason
+2025-10-12 21:38:50.341959,USER-0050,DEV-0032,APP-0005,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.341986,USER-0015,DEV-0060,APP-0004,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.342006,USER-0035,DEV-0075,APP-0001,,False,Insufficient access level (required: 2)
+2025-10-12 21:38:50.345293,USER-0047,DEV-0034,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password'])"
+2025-10-12 21:38:50.345312,USER-0041,DEV-0035,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.345325,USER-0017,DEV-0042,APP-0006,,False,"Device validation failed: Trust score too low (required: 70, current: 65)"
+2025-10-12 21:38:50.345342,USER-0021,DEV-0012,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.345457,USER-0002,DEV-0066,APP-0005,,False,"Device validation failed: Trust score too low (required: 70, current: 60)"
+2025-10-12 21:38:50.345499,USER-0030,DEV-0050,APP-0003,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.345516,USER-0019,DEV-0071,APP-0003,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.345529,USER-0049,DEV-0043,APP-0003,,False,"Authentication method not sufficient (required: ['mfa', 'biometric'])"
+2025-10-12 21:38:50.345653,USER-0041,DEV-0019,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password'])"
+2025-10-12 21:38:50.345706,USER-0031,DEV-0023,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.345743,USER-0039,DEV-0010,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.345797,USER-0040,DEV-0027,APP-0002,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.345852,USER-0027,DEV-0005,APP-0003,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.345866,USER-0030,DEV-0032,APP-0008,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.345880,USER-0003,DEV-0020,APP-0001,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.345955,USER-0036,DEV-0063,APP-0006,,False,Insufficient access level (required: 2)
+2025-10-12 21:38:50.345994,USER-0035,DEV-0075,APP-0003,,False,Insufficient access level (required: 3); User risk score too high (max: 30)
+2025-10-12 21:38:50.346034,USER-0028,DEV-0046,APP-0005,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.346047,USER-0046,DEV-0022,APP-0005,,False,"Authentication method not sufficient (required: ['mfa', 'biometric'])"
+2025-10-12 21:38:50.346118,USER-0023,DEV-0006,APP-0007,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.346157,USER-0041,DEV-0048,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.346169,USER-0021,DEV-0012,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.346306,USER-0028,DEV-0022,APP-0006,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.346350,USER-0028,DEV-0037,APP-0009,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.346363,USER-0031,DEV-0028,APP-0007,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric'])"
+2025-10-12 21:38:50.346439,USER-0026,DEV-0013,APP-0008,,False,Insufficient access level (required: 4)
+2025-10-12 21:38:50.346534,USER-0013,DEV-0045,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric'])"
+2025-10-12 21:38:50.346595,USER-0034,DEV-0072,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password'])"
+2025-10-12 21:38:50.346611,USER-0014,DEV-0035,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.346679,USER-0044,DEV-0036,APP-0003,,False,"Authentication method not sufficient (required: ['mfa', 'biometric'])"
+2025-10-12 21:38:50.346691,USER-0003,DEV-0052,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric'])"
+2025-10-12 21:38:50.346705,USER-0015,DEV-0053,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.346716,USER-0046,DEV-0022,APP-0007,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.346728,USER-0003,DEV-0020,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric'])"
+2025-10-12 21:38:50.346958,USER-0019,DEV-0071,APP-0005,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.346978,USER-0043,DEV-0008,APP-0006,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.347017,USER-0040,DEV-0027,APP-0002,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.347046,USER-0005,DEV-0064,APP-0004,,False,"Device validation failed: Trust score too low (required: 70, current: 65)"
+2025-10-12 21:38:50.347059,USER-0009,DEV-0058,APP-0005,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.347071,USER-0010,DEV-0060,APP-0001,,False,Insufficient access level (required: 2)
+2025-10-12 21:38:50.347134,USER-0027,DEV-0005,APP-0007,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.347192,USER-0007,DEV-0030,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.347203,USER-0042,DEV-0006,APP-0004,,False,Insufficient access level (required: 4)
+2025-10-12 21:38:50.347214,USER-0033,DEV-0053,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.347225,USER-0007,DEV-0074,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.347294,USER-0014,DEV-0035,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.347421,USER-0046,DEV-0049,APP-0003,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.347465,USER-0004,DEV-0068,APP-0006,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.347480,USER-0049,DEV-0043,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password'])"
+2025-10-12 21:38:50.347740,USER-0048,DEV-0066,APP-0008,,False,"Device validation failed: Trust score too low (required: 70, current: 60)"
+2025-10-12 21:38:50.347905,USER-0006,DEV-0031,APP-0002,,False,"Authentication method not sufficient (required: ['mfa', 'biometric'])"
+2025-10-12 21:38:50.347947,USER-0002,DEV-0057,APP-0008,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.347960,USER-0009,DEV-0019,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.347971,USER-0035,DEV-0075,APP-0006,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.348100,USER-0044,DEV-0036,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.348111,USER-0021,DEV-0012,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.348122,USER-0015,DEV-0029,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.348320,USER-0037,DEV-0014,APP-0006,,False,Insufficient access level (required: 2)
+2025-10-12 21:38:50.348335,USER-0020,DEV-0017,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.348347,USER-0032,DEV-0031,APP-0002,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.348429,USER-0032,DEV-0034,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.348519,USER-0031,DEV-0023,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.348566,USER-0047,DEV-0034,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.348687,USER-0006,DEV-0031,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.348700,USER-0023,DEV-0054,APP-0003,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.348740,USER-0033,DEV-0011,APP-0010,,False,"Device validation failed: Trust score too low (required: 70, current: 65)"
+2025-10-12 21:38:50.348750,USER-0021,DEV-0012,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.348811,USER-0001,DEV-0011,APP-0010,,False,"Device validation failed: Trust score too low (required: 70, current: 65)"
+2025-10-12 21:38:50.348823,USER-0012,DEV-0069,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.348885,USER-0013,DEV-0045,APP-0001,,False,Insufficient access level (required: 2)
+2025-10-12 21:38:50.348898,USER-0030,DEV-0069,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.348935,USER-0015,DEV-0011,APP-0002,,False,"Device validation failed: Trust score too low (required: 70, current: 65)"
+2025-10-12 21:38:50.348985,USER-0010,DEV-0015,APP-0001,,False,Insufficient access level (required: 2)
+2025-10-12 21:38:50.349037,USER-0021,DEV-0012,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.349114,USER-0033,DEV-0011,APP-0009,,False,"Device validation failed: Trust score too low (required: 70, current: 65)"
+2025-10-12 21:38:50.349167,USER-0044,DEV-0025,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.349178,USER-0038,DEV-0055,APP-0003,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.349193,USER-0030,DEV-0025,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.349204,USER-0037,DEV-0014,APP-0007,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric'])"
+2025-10-12 21:38:50.349216,USER-0004,DEV-0068,APP-0001,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.349260,USER-0023,DEV-0035,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.349273,USER-0050,DEV-0032,APP-0002,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.349286,USER-0010,DEV-0015,APP-0007,,False,Insufficient access level (required: 3); User risk score too high (max: 30)
+2025-10-12 21:38:50.349430,USER-0044,DEV-0036,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.349447,USER-0027,DEV-0005,APP-0003,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.349460,USER-0041,DEV-0047,APP-0009,,False,"Device validation failed: Trust score too low (required: 70, current: 60)"
+2025-10-12 21:38:50.349502,USER-0045,DEV-0071,APP-0007,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.349515,USER-0024,DEV-0050,APP-0002,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.349527,USER-0031,DEV-0023,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.349567,USER-0001,DEV-0005,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password'])"
+2025-10-12 21:38:50.349579,USER-0013,DEV-0045,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.349629,USER-0033,DEV-0053,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.349671,USER-0018,DEV-0072,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.349690,USER-0033,DEV-0011,APP-0010,,False,"Device validation failed: Trust score too low (required: 70, current: 65)"
+2025-10-12 21:38:50.349703,USER-0048,DEV-0066,APP-0001,,False,"Device validation failed: Trust score too low (required: 70, current: 60)"
+2025-10-12 21:38:50.349721,USER-0025,DEV-0002,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.349760,USER-0036,DEV-0063,APP-0003,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.349772,USER-0006,DEV-0031,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.349784,USER-0032,DEV-0053,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.349794,USER-0047,DEV-0034,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.349810,USER-0022,DEV-0005,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password'])"
+2025-10-12 21:38:50.349821,USER-0035,DEV-0075,APP-0010,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.349840,USER-0032,DEV-0016,APP-0008,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.349852,USER-0015,DEV-0051,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.349862,USER-0047,DEV-0034,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.349931,USER-0032,DEV-0028,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.349944,USER-0043,DEV-0008,APP-0009,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.349994,USER-0046,DEV-0049,APP-0009,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.350061,USER-0026,DEV-0004,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.350155,USER-0002,DEV-0057,APP-0001,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.350193,USER-0002,DEV-0001,APP-0008,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.350205,USER-0042,DEV-0006,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.350248,USER-0030,DEV-0031,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.350314,USER-0001,DEV-0005,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.350325,USER-0007,DEV-0074,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.350342,USER-0008,DEV-0024,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.350416,USER-0019,DEV-0071,APP-0010,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.350456,USER-0046,DEV-0022,APP-0003,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.350470,USER-0038,DEV-0055,APP-0007,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.350562,USER-0040,DEV-0027,APP-0009,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.350607,USER-0022,DEV-0036,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password'])"
+2025-10-12 21:38:50.350618,USER-0017,DEV-0008,APP-0008,,False,Insufficient access level (required: 4)
+2025-10-12 21:38:50.350704,USER-0018,DEV-0016,APP-0001,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.350754,USER-0039,DEV-0010,APP-0009,,False,"Device validation failed: Trust score too low (required: 70, current: 67)"
+2025-10-12 21:38:50.350823,USER-0004,DEV-0068,APP-0002,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.350841,USER-0048,DEV-0066,APP-0009,,False,"Device validation failed: Trust score too low (required: 70, current: 60)"
+2025-10-12 21:38:50.350853,USER-0015,DEV-0010,APP-0005,,False,"Device validation failed: Trust score too low (required: 70, current: 67)"
+2025-10-12 21:38:50.350863,USER-0016,DEV-0039,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password'])"
+2025-10-12 21:38:50.350939,USER-0036,DEV-0063,APP-0003,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.350951,USER-0037,DEV-0014,APP-0006,,False,Insufficient access level (required: 2)
+2025-10-12 21:38:50.350962,USER-0011,DEV-0026,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.350972,USER-0004,DEV-0068,APP-0002,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.350985,USER-0032,DEV-0075,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.350995,USER-0036,DEV-0007,APP-0003,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.351044,USER-0027,DEV-0005,APP-0006,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.351056,USER-0002,DEV-0067,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.351095,USER-0050,DEV-0032,APP-0007,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.351193,USER-0031,DEV-0028,APP-0007,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.351232,USER-0028,DEV-0025,APP-0008,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.351245,USER-0027,DEV-0038,APP-0010,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.351264,USER-0042,DEV-0006,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.351331,USER-0039,DEV-0010,APP-0010,,False,"Device validation failed: Trust score too low (required: 70, current: 67)"
+2025-10-12 21:38:50.351375,USER-0005,DEV-0064,APP-0001,,False,"Device validation failed: Trust score too low (required: 70, current: 65)"
+2025-10-12 21:38:50.351387,USER-0033,DEV-0041,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.351429,USER-0032,DEV-0043,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.351440,USER-0009,DEV-0047,APP-0001,,False,"Device validation failed: Trust score too low (required: 70, current: 60)"
+2025-10-12 21:38:50.351561,USER-0007,DEV-0030,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.351571,USER-0050,DEV-0032,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password'])"
+2025-10-12 21:38:50.351590,USER-0002,DEV-0012,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.351600,USER-0037,DEV-0014,APP-0001,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.351696,USER-0037,DEV-0014,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.351761,USER-0003,DEV-0020,APP-0003,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.351799,USER-0004,DEV-0068,APP-0005,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.351931,USER-0013,DEV-0045,APP-0007,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.351948,USER-0046,DEV-0022,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.351989,USER-0006,DEV-0031,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.352068,USER-0038,DEV-0055,APP-0008,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.352151,USER-0029,DEV-0059,APP-0002,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.352229,USER-0018,DEV-0072,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.352294,USER-0032,DEV-0070,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.352304,USER-0023,DEV-0022,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password'])"
+2025-10-12 21:38:50.352344,USER-0049,DEV-0018,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.352356,USER-0024,DEV-0050,APP-0005,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.352530,USER-0009,DEV-0047,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.352608,USER-0028,DEV-0013,APP-0001,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.352625,USER-0031,DEV-0028,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.352643,USER-0002,DEV-0011,APP-0001,,False,"Device validation failed: Trust score too low (required: 70, current: 65)"
+2025-10-12 21:38:50.352654,USER-0015,DEV-0029,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.352664,USER-0032,DEV-0044,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.352674,USER-0018,DEV-0057,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.352687,USER-0027,DEV-0038,APP-0004,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.352729,USER-0022,DEV-0070,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.352776,USER-0023,DEV-0012,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.352840,USER-0023,DEV-0062,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.353009,USER-0036,DEV-0040,APP-0008,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.353026,USER-0039,DEV-0010,APP-0002,,False,"Device validation failed: Trust score too low (required: 70, current: 67)"
+2025-10-12 21:38:50.353117,USER-0016,DEV-0044,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.353160,USER-0032,DEV-0024,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.353175,USER-0032,DEV-0004,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.353186,USER-0017,DEV-0011,APP-0003,,False,"Device validation failed: Trust score too low (required: 70, current: 65)"
+2025-10-12 21:38:50.353253,USER-0029,DEV-0032,APP-0006,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.353266,USER-0027,DEV-0005,APP-0010,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.353277,USER-0042,DEV-0006,APP-0001,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.353288,USER-0004,DEV-0068,APP-0007,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.353300,USER-0031,DEV-0028,APP-0001,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.353310,USER-0026,DEV-0042,APP-0001,,False,"Device validation failed: Trust score too low (required: 70, current: 67)"
+2025-10-12 21:38:50.353320,USER-0049,DEV-0018,APP-0003,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.353332,USER-0027,DEV-0038,APP-0009,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.353344,USER-0011,DEV-0026,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.353470,USER-0034,DEV-0047,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.353512,USER-0047,DEV-0034,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.353522,USER-0037,DEV-0014,APP-0009,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.353668,USER-0027,DEV-0005,APP-0008,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.353685,USER-0016,DEV-0001,APP-0008,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.353782,USER-0049,DEV-0043,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.353821,USER-0008,DEV-0024,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.353832,USER-0016,DEV-0039,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.353844,USER-0037,DEV-0014,APP-0006,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.353855,USER-0014,DEV-0035,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.353893,USER-0004,DEV-0068,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.353909,USER-0027,DEV-0005,APP-0006,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.353961,USER-0020,DEV-0046,APP-0010,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.353985,USER-0027,DEV-0005,APP-0006,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.354017,USER-0036,DEV-0040,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.354058,USER-0025,DEV-0033,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.354068,USER-0044,DEV-0025,APP-0007,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.354080,USER-0006,DEV-0031,APP-0002,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.354119,USER-0031,DEV-0023,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.354129,USER-0047,DEV-0034,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.354290,USER-0046,DEV-0049,APP-0005,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.354327,USER-0049,DEV-0043,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.354479,USER-0039,DEV-0010,APP-0009,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.354490,USER-0041,DEV-0075,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.354502,USER-0041,DEV-0051,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.354572,USER-0050,DEV-0032,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password'])"
+2025-10-12 21:38:50.354584,USER-0018,DEV-0072,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.354595,USER-0019,DEV-0037,APP-0008,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.354614,USER-0044,DEV-0025,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.354686,USER-0024,DEV-0050,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password'])"
+2025-10-12 21:38:50.354697,USER-0007,DEV-0030,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.354733,USER-0047,DEV-0034,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.354743,USER-0034,DEV-0024,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.354794,USER-0001,DEV-0019,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.354804,USER-0003,DEV-0052,APP-0006,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.354848,USER-0013,DEV-0045,APP-0010,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.354859,USER-0046,DEV-0022,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.354870,USER-0045,DEV-0044,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.354908,USER-0005,DEV-0021,APP-0003,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.354947,USER-0002,DEV-0043,APP-0004,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.354959,USER-0029,DEV-0056,APP-0004,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.354986,USER-0028,DEV-0071,APP-0002,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.355044,USER-0014,DEV-0035,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.355056,USER-0040,DEV-0027,APP-0008,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.355123,USER-0008,DEV-0024,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.355136,USER-0030,DEV-0011,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.355180,USER-0026,DEV-0004,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.355191,USER-0035,DEV-0075,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.355229,USER-0003,DEV-0020,APP-0004,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.355241,USER-0034,DEV-0034,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.355253,USER-0030,DEV-0060,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.355410,USER-0010,DEV-0003,APP-0003,,False,Insufficient access level (required: 3); User risk score too high (max: 30)
+2025-10-12 21:38:50.355454,USER-0034,DEV-0068,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.355529,USER-0030,DEV-0073,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.355542,USER-0005,DEV-0021,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.355553,USER-0001,DEV-0007,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.355629,USER-0042,DEV-0006,APP-0001,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.355723,USER-0009,DEV-0059,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.355762,USER-0018,DEV-0072,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.355772,USER-0025,DEV-0002,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.355903,USER-0011,DEV-0026,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.355915,USER-0027,DEV-0038,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.355955,USER-0039,DEV-0010,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.355966,USER-0014,DEV-0035,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.356116,USER-0016,DEV-0039,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.356128,USER-0035,DEV-0075,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.356140,USER-0046,DEV-0049,APP-0006,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.356207,USER-0043,DEV-0008,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.356217,USER-0030,DEV-0054,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.356336,USER-0027,DEV-0038,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.356379,USER-0013,DEV-0045,APP-0009,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.356391,USER-0013,DEV-0045,APP-0010,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.356435,USER-0001,DEV-0026,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.356445,USER-0019,DEV-0071,APP-0010,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.356486,USER-0035,DEV-0075,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.356552,USER-0047,DEV-0034,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.356562,USER-0017,DEV-0063,APP-0002,,False,Insufficient access level (required: 3); User risk score too high (max: 30)
+2025-10-12 21:38:50.356574,USER-0035,DEV-0075,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.356583,USER-0030,DEV-0036,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.356594,USER-0003,DEV-0020,APP-0001,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.356824,USER-0025,DEV-0002,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.356834,USER-0023,DEV-0072,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.356903,USER-0024,DEV-0050,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.356914,USER-0048,DEV-0066,APP-0002,,False,"Device validation failed: Trust score too low (required: 70, current: 60)"
+2025-10-12 21:38:50.356950,USER-0019,DEV-0071,APP-0002,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.356964,USER-0013,DEV-0045,APP-0008,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.356993,USER-0033,DEV-0053,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.357114,USER-0014,DEV-0035,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.357210,USER-0035,DEV-0075,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.357221,USER-0006,DEV-0031,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.357232,USER-0043,DEV-0008,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.357297,USER-0042,DEV-0006,APP-0004,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.357308,USER-0015,DEV-0052,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.357347,USER-0047,DEV-0034,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.357386,USER-0029,DEV-0073,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.357397,USER-0032,DEV-0049,APP-0003,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.357439,USER-0039,DEV-0010,APP-0009,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.357481,USER-0047,DEV-0034,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.357495,USER-0013,DEV-0045,APP-0010,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.357506,USER-0015,DEV-0070,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.357516,USER-0015,DEV-0064,APP-0010,,False,"Device validation failed: Trust score too low (required: 70, current: 67)"
+2025-10-12 21:38:50.357526,USER-0047,DEV-0034,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.357571,USER-0027,DEV-0005,APP-0001,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.357620,USER-0047,DEV-0034,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.357856,USER-0036,DEV-0040,APP-0007,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.357976,USER-0031,DEV-0028,APP-0003,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.357992,USER-0037,DEV-0014,APP-0008,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.358004,USER-0039,DEV-0010,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.358100,USER-0036,DEV-0007,APP-0009,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.358173,USER-0004,DEV-0068,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.358183,USER-0025,DEV-0002,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.358194,USER-0017,DEV-0050,APP-0002,,False,Insufficient access level (required: 3); User risk score too high (max: 30)
+2025-10-12 21:38:50.358312,USER-0050,DEV-0032,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.358400,USER-0041,DEV-0027,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.358410,USER-0022,DEV-0060,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.358486,USER-0049,DEV-0018,APP-0003,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.358532,USER-0019,DEV-0048,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.358598,USER-0037,DEV-0014,APP-0009,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.358609,USER-0003,DEV-0020,APP-0006,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.358620,USER-0047,DEV-0034,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.358687,USER-0043,DEV-0008,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.358697,USER-0047,DEV-0034,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.358718,USER-0035,DEV-0075,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.358728,USER-0007,DEV-0074,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.358771,USER-0014,DEV-0035,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.358903,USER-0032,DEV-0065,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.358942,USER-0029,DEV-0003,APP-0004,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.358982,USER-0018,DEV-0057,APP-0009,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.358993,USER-0035,DEV-0075,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.359061,USER-0050,DEV-0032,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.359089,USER-0015,DEV-0055,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.359130,USER-0016,DEV-0044,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.359252,USER-0040,DEV-0027,APP-0002,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.359265,USER-0012,DEV-0029,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.359275,USER-0037,DEV-0014,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.359355,USER-0017,DEV-0062,APP-0004,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.359371,USER-0001,DEV-0034,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.359434,USER-0014,DEV-0035,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.359511,USER-0029,DEV-0030,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.359539,USER-0044,DEV-0036,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.359555,USER-0025,DEV-0033,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.359566,USER-0043,DEV-0008,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.359658,USER-0015,DEV-0050,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.359732,USER-0027,DEV-0038,APP-0001,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.359750,USER-0045,DEV-0048,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.359765,USER-0004,DEV-0068,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.359776,USER-0014,DEV-0035,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.359851,USER-0032,DEV-0003,APP-0004,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.359918,USER-0013,DEV-0045,APP-0010,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.360034,USER-0039,DEV-0010,APP-0008,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.360148,USER-0036,DEV-0007,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.360245,USER-0036,DEV-0063,APP-0001,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.360312,USER-0022,DEV-0066,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.360358,USER-0033,DEV-0053,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.360435,USER-0007,DEV-0030,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.360446,USER-0002,DEV-0039,APP-0010,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.360458,USER-0046,DEV-0022,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.360513,USER-0035,DEV-0075,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.360528,USER-0033,DEV-0041,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.360571,USER-0024,DEV-0050,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.360672,USER-0035,DEV-0075,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.360683,USER-0014,DEV-0035,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.360694,USER-0045,DEV-0058,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.360740,USER-0019,DEV-0037,APP-0006,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.360756,USER-0030,DEV-0074,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.360778,USER-0011,DEV-0073,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.360789,USER-0038,DEV-0055,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.360830,USER-0049,DEV-0043,APP-0002,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.360928,USER-0010,DEV-0003,APP-0007,,False,Insufficient access level (required: 3); User risk score too high (max: 30)
+2025-10-12 21:38:50.360944,USER-0035,DEV-0075,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.360993,USER-0027,DEV-0038,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.361032,USER-0041,DEV-0006,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.361102,USER-0016,DEV-0039,APP-0004,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.361148,USER-0008,DEV-0024,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.361212,USER-0024,DEV-0050,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.361255,USER-0050,DEV-0032,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.361269,USER-0030,DEV-0019,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.361281,USER-0008,DEV-0024,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.361376,USER-0029,DEV-0050,APP-0009,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.361391,USER-0007,DEV-0074,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.361403,USER-0032,DEV-0051,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.361474,USER-0040,DEV-0027,APP-0009,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.361716,USER-0022,DEV-0067,APP-0004,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.361728,USER-0039,DEV-0010,APP-0003,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.361740,USER-0031,DEV-0028,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.361751,USER-0029,DEV-0074,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.361761,USER-0048,DEV-0066,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.361841,USER-0008,DEV-0024,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.361851,USER-0028,DEV-0052,APP-0005,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.361892,USER-0008,DEV-0024,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.361903,USER-0015,DEV-0058,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.361985,USER-0006,DEV-0031,APP-0003,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.362030,USER-0041,DEV-0046,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.362042,USER-0047,DEV-0034,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.362052,USER-0007,DEV-0074,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.362117,USER-0005,DEV-0021,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.362156,USER-0041,DEV-0003,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.362167,USER-0033,DEV-0011,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.362179,USER-0050,DEV-0032,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.362189,USER-0049,DEV-0018,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.362199,USER-0050,DEV-0032,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.362210,USER-0014,DEV-0035,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.362302,USER-0026,DEV-0004,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.362313,USER-0029,DEV-0018,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.362323,USER-0038,DEV-0055,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.362360,USER-0043,DEV-0008,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.362405,USER-0047,DEV-0034,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.362475,USER-0018,DEV-0072,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.362518,USER-0036,DEV-0063,APP-0009,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.362560,USER-0040,DEV-0027,APP-0006,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.362574,USER-0032,DEV-0072,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.362612,USER-0003,DEV-0020,APP-0001,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.362656,USER-0043,DEV-0008,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.362723,USER-0046,DEV-0022,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.362767,USER-0029,DEV-0024,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.362861,USER-0038,DEV-0055,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.362879,USER-0047,DEV-0034,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.362917,USER-0044,DEV-0025,APP-0002,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.362957,USER-0035,DEV-0075,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.362968,USER-0001,DEV-0013,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.363035,USER-0006,DEV-0031,APP-0007,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.363046,USER-0001,DEV-0068,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.363117,USER-0019,DEV-0071,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.363209,USER-0006,DEV-0031,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.363220,USER-0001,DEV-0048,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.363290,USER-0048,DEV-0066,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.363303,USER-0035,DEV-0075,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.363313,USER-0047,DEV-0034,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.363479,USER-0032,DEV-0049,APP-0007,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.363491,USER-0022,DEV-0056,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.363504,USER-0010,DEV-0003,APP-0010,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.363570,USER-0018,DEV-0016,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.363581,USER-0047,DEV-0034,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.363651,USER-0036,DEV-0007,APP-0007,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.363690,USER-0025,DEV-0033,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.363728,USER-0020,DEV-0017,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.363891,USER-0009,DEV-0059,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.363961,USER-0019,DEV-0071,APP-0009,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.364003,USER-0015,DEV-0068,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.364013,USER-0014,DEV-0035,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.364023,USER-0025,DEV-0033,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.364038,USER-0047,DEV-0034,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.364052,USER-0025,DEV-0002,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.364102,USER-0022,DEV-0073,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.364113,USER-0004,DEV-0068,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.364124,USER-0044,DEV-0036,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.364135,USER-0002,DEV-0057,APP-0003,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.364146,USER-0041,DEV-0012,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.364157,USER-0045,DEV-0002,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.364275,USER-0011,DEV-0051,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.364286,USER-0032,DEV-0035,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.364295,USER-0041,DEV-0047,APP-0007,,False,"Device validation failed: Trust score too low (required: 70, current: 42)"
+2025-10-12 21:38:50.364343,USER-0001,DEV-0042,APP-0004,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.364383,USER-0036,DEV-0040,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.364395,USER-0035,DEV-0075,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.364407,USER-0005,DEV-0056,APP-0004,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.364574,USER-0046,DEV-0022,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.364642,USER-0004,DEV-0068,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.364680,USER-0032,DEV-0069,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.364727,USER-0029,DEV-0038,APP-0010,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.364804,USER-0027,DEV-0038,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.364848,USER-0044,DEV-0036,APP-0002,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.364859,USER-0022,DEV-0049,APP-0002,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.364870,USER-0041,DEV-0061,APP-0003,,False,"Device validation failed: Trust score too low (required: 70, current: 69)"
+2025-10-12 21:38:50.364882,USER-0018,DEV-0016,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.364927,USER-0015,DEV-0015,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.364939,USER-0046,DEV-0022,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.365115,USER-0016,DEV-0001,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.365125,USER-0041,DEV-0011,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.365147,USER-0005,DEV-0021,APP-0007,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.365159,USER-0012,DEV-0054,APP-0004,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.365176,USER-0027,DEV-0038,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.365216,USER-0004,DEV-0068,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.365226,USER-0040,DEV-0027,APP-0008,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.365321,USER-0014,DEV-0035,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.365395,USER-0043,DEV-0008,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.365406,USER-0047,DEV-0034,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.365416,USER-0028,DEV-0058,APP-0006,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.365467,USER-0024,DEV-0050,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.365513,USER-0043,DEV-0008,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.365523,USER-0007,DEV-0067,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.365596,USER-0050,DEV-0032,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.365611,USER-0029,DEV-0035,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.365624,USER-0043,DEV-0008,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.365673,USER-0014,DEV-0035,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.365738,USER-0035,DEV-0075,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.365753,USER-0036,DEV-0063,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.365820,USER-0007,DEV-0067,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.365836,USER-0031,DEV-0028,APP-0007,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.365851,USER-0012,DEV-0029,APP-0004,,False,"Device validation failed: Trust score too low (required: 70, current: 68)"
+2025-10-12 21:38:50.365861,USER-0039,DEV-0010,APP-0010,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.365877,USER-0007,DEV-0030,APP-0008,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.365947,USER-0010,DEV-0060,APP-0007,,False,Insufficient access level (required: 3); User risk score too high (max: 30)
+2025-10-12 21:38:50.365957,USER-0013,DEV-0045,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.365967,USER-0040,DEV-0027,APP-0005,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.366016,USER-0024,DEV-0050,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.366178,USER-0007,DEV-0030,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.366217,USER-0043,DEV-0008,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.366343,USER-0006,DEV-0031,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.366401,USER-0033,DEV-0011,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.366413,USER-0004,DEV-0068,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.366451,USER-0038,DEV-0055,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.366615,USER-0044,DEV-0036,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.366654,USER-0009,DEV-0058,APP-0006,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.366665,USER-0032,DEV-0032,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.366675,USER-0042,DEV-0006,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.366713,USER-0049,DEV-0018,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.366781,USER-0043,DEV-0008,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.366792,USER-0004,DEV-0068,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.366802,USER-0024,DEV-0050,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.366813,USER-0006,DEV-0031,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.366916,USER-0018,DEV-0016,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.366999,USER-0018,DEV-0072,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.367038,USER-0027,DEV-0038,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.367077,USER-0018,DEV-0057,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.367099,USER-0002,DEV-0024,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.367135,USER-0044,DEV-0036,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.367146,USER-0039,DEV-0010,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.367185,USER-0028,DEV-0033,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.367196,USER-0011,DEV-0073,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.367299,USER-0038,DEV-0055,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.367310,USER-0046,DEV-0049,APP-0007,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.367327,USER-0043,DEV-0008,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.367343,USER-0006,DEV-0031,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.367386,USER-0036,DEV-0007,APP-0006,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.367397,USER-0010,DEV-0060,APP-0003,,False,Insufficient access level (required: 3); User risk score too high (max: 30)
+2025-10-12 21:38:50.367408,USER-0005,DEV-0021,APP-0010,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.367446,USER-0015,DEV-0030,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.367544,USER-0027,DEV-0038,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.367555,USER-0035,DEV-0075,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.367627,USER-0026,DEV-0004,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.367690,USER-0047,DEV-0034,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.367831,USER-0014,DEV-0035,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.367846,USER-0023,DEV-0023,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.367947,USER-0029,DEV-0023,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.367958,USER-0043,DEV-0008,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.367968,USER-0028,DEV-0061,APP-0005,,False,"Device validation failed: Trust score too low (required: 70, current: 69)"
+2025-10-12 21:38:50.368154,USER-0036,DEV-0063,APP-0008,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.368170,USER-0047,DEV-0034,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.368208,USER-0033,DEV-0053,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.368285,USER-0035,DEV-0075,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.368376,USER-0030,DEV-0019,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.368415,USER-0045,DEV-0003,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.368426,USER-0007,DEV-0030,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.368437,USER-0022,DEV-0056,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.368449,USER-0048,DEV-0066,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.368466,USER-0019,DEV-0048,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.368505,USER-0031,DEV-0023,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.368515,USER-0036,DEV-0007,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.368554,USER-0034,DEV-0006,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.368564,USER-0028,DEV-0055,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.368574,USER-0038,DEV-0055,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.368586,USER-0014,DEV-0035,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.368621,USER-0033,DEV-0053,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.368655,USER-0050,DEV-0032,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.368719,USER-0023,DEV-0063,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.368730,USER-0015,DEV-0062,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.368777,USER-0001,DEV-0058,APP-0008,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.368816,USER-0028,DEV-0068,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.368828,USER-0003,DEV-0020,APP-0010,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.368844,USER-0029,DEV-0033,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.368854,USER-0001,DEV-0067,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.368877,USER-0012,DEV-0054,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.368888,USER-0006,DEV-0031,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.368928,USER-0035,DEV-0075,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.368970,USER-0046,DEV-0049,APP-0008,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.369031,USER-0045,DEV-0026,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.369076,USER-0048,DEV-0066,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.369086,USER-0004,DEV-0068,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.369129,USER-0010,DEV-0060,APP-0009,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.369168,USER-0038,DEV-0055,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.369208,USER-0028,DEV-0028,APP-0009,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.369257,USER-0039,DEV-0010,APP-0010,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.369275,USER-0004,DEV-0068,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.369313,USER-0021,DEV-0012,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.369323,USER-0018,DEV-0057,APP-0010,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.369387,USER-0022,DEV-0047,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.369398,USER-0048,DEV-0066,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.369413,USER-0015,DEV-0005,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.369477,USER-0015,DEV-0001,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.369564,USER-0003,DEV-0052,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.369633,USER-0022,DEV-0055,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.369645,USER-0035,DEV-0075,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.369739,USER-0003,DEV-0052,APP-0004,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.369806,USER-0005,DEV-0064,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.369848,USER-0022,DEV-0030,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.369923,USER-0032,DEV-0015,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.369934,USER-0034,DEV-0073,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.369944,USER-0031,DEV-0023,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.369981,USER-0038,DEV-0055,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.369997,USER-0017,DEV-0051,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.370007,USER-0044,DEV-0025,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.370230,USER-0005,DEV-0021,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.370278,USER-0004,DEV-0068,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.370288,USER-0012,DEV-0029,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.370314,USER-0047,DEV-0034,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.370352,USER-0047,DEV-0034,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.370363,USER-0011,DEV-0051,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.370424,USER-0033,DEV-0053,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.370460,USER-0008,DEV-0024,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.370498,USER-0048,DEV-0066,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.370509,USER-0049,DEV-0018,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.370521,USER-0007,DEV-0074,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.370586,USER-0046,DEV-0022,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.370599,USER-0011,DEV-0073,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.370681,USER-0005,DEV-0056,APP-0010,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.370692,USER-0035,DEV-0075,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.370729,USER-0018,DEV-0016,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.370740,USER-0005,DEV-0056,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.370810,USER-0050,DEV-0032,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.370820,USER-0033,DEV-0053,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.370908,USER-0008,DEV-0024,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.370919,USER-0021,DEV-0012,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.370940,USER-0014,DEV-0035,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.370978,USER-0048,DEV-0066,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.370988,USER-0040,DEV-0027,APP-0002,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.371134,USER-0004,DEV-0068,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.371148,USER-0015,DEV-0063,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.371216,USER-0025,DEV-0002,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.371226,USER-0018,DEV-0072,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.371299,USER-0019,DEV-0037,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.371317,USER-0040,DEV-0027,APP-0010,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.371329,USER-0021,DEV-0012,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.371369,USER-0044,DEV-0036,APP-0005,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.371413,USER-0049,DEV-0018,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.371424,USER-0045,DEV-0038,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.371435,USER-0031,DEV-0023,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.371445,USER-0026,DEV-0061,APP-0008,,False,"Device validation failed: Trust score too low (required: 70, current: 69)"
+2025-10-12 21:38:50.371482,USER-0022,DEV-0025,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.371493,USER-0025,DEV-0033,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.371528,USER-0039,DEV-0010,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.371539,USER-0001,DEV-0018,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.371576,USER-0021,DEV-0012,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.371586,USER-0035,DEV-0075,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.371596,USER-0024,DEV-0050,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.371612,USER-0030,DEV-0058,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.371622,USER-0020,DEV-0017,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.371636,USER-0043,DEV-0008,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.371673,USER-0024,DEV-0050,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.371684,USER-0049,DEV-0018,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.371694,USER-0035,DEV-0075,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.371739,USER-0028,DEV-0009,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.371776,USER-0042,DEV-0006,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.371787,USER-0007,DEV-0009,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.371829,USER-0011,DEV-0026,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.371926,USER-0014,DEV-0035,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.372037,USER-0022,DEV-0073,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.372047,USER-0038,DEV-0055,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.372057,USER-0048,DEV-0066,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.372067,USER-0008,DEV-0024,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.372077,USER-0024,DEV-0050,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.372088,USER-0043,DEV-0008,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.372150,USER-0026,DEV-0061,APP-0002,,False,"Device validation failed: Trust score too low (required: 70, current: 69)"
+2025-10-12 21:38:50.372160,USER-0030,DEV-0039,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.372170,USER-0026,DEV-0042,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.372319,USER-0028,DEV-0033,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.372329,USER-0024,DEV-0050,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.372350,USER-0045,DEV-0074,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.372361,USER-0026,DEV-0013,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.372372,USER-0024,DEV-0050,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.372383,USER-0027,DEV-0038,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.372419,USER-0003,DEV-0020,APP-0001,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.372444,USER-0002,DEV-0067,APP-0001,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.372527,USER-0021,DEV-0012,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.372578,USER-0004,DEV-0068,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.372746,USER-0035,DEV-0075,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.372786,USER-0043,DEV-0008,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.372862,USER-0001,DEV-0024,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.372877,USER-0029,DEV-0009,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.372955,USER-0028,DEV-0074,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.372966,USER-0035,DEV-0075,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.373007,USER-0003,DEV-0020,APP-0003,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.373019,USER-0031,DEV-0023,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.373029,USER-0044,DEV-0036,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.373045,USER-0005,DEV-0056,APP-0008,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.373145,USER-0008,DEV-0024,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.373155,USER-0034,DEV-0037,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.373167,USER-0026,DEV-0013,APP-0008,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.373178,USER-0039,DEV-0010,APP-0008,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.373216,USER-0016,DEV-0039,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.373254,USER-0015,DEV-0041,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.373348,USER-0049,DEV-0043,APP-0002,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.373360,USER-0021,DEV-0012,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.373531,USER-0012,DEV-0054,APP-0004,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.373542,USER-0028,DEV-0030,APP-0006,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.373554,USER-0019,DEV-0037,APP-0009,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.373617,USER-0041,DEV-0039,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.373627,USER-0018,DEV-0072,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.373637,USER-0008,DEV-0024,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.373647,USER-0034,DEV-0021,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.373657,USER-0007,DEV-0074,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.373667,USER-0018,DEV-0057,APP-0001,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.373758,USER-0012,DEV-0029,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.373768,USER-0020,DEV-0017,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.373808,USER-0042,DEV-0006,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.373825,USER-0050,DEV-0032,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.373865,USER-0047,DEV-0034,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.373930,USER-0025,DEV-0002,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.373948,USER-0022,DEV-0023,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.373958,USER-0032,DEV-0041,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.374022,USER-0032,DEV-0024,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.374169,USER-0008,DEV-0024,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.374180,USER-0048,DEV-0066,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.374190,USER-0006,DEV-0031,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.374205,USER-0016,DEV-0001,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.374248,USER-0010,DEV-0060,APP-0002,,False,Insufficient access level (required: 3); User risk score too high (max: 30)
+2025-10-12 21:38:50.374342,USER-0004,DEV-0068,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.374352,USER-0039,DEV-0010,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.374363,USER-0002,DEV-0073,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.374373,USER-0006,DEV-0031,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.374443,USER-0036,DEV-0007,APP-0008,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.374482,USER-0031,DEV-0023,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.374492,USER-0031,DEV-0028,APP-0001,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.374587,USER-0011,DEV-0073,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.374597,USER-0034,DEV-0041,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.374688,USER-0010,DEV-0015,APP-0006,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.374728,USER-0016,DEV-0044,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.374768,USER-0002,DEV-0019,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.374778,USER-0033,DEV-0011,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.374813,USER-0035,DEV-0075,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.374856,USER-0018,DEV-0072,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.374869,USER-0035,DEV-0075,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.375033,USER-0049,DEV-0043,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.375046,USER-0040,DEV-0027,APP-0003,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.375087,USER-0002,DEV-0025,APP-0010,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.375099,USER-0014,DEV-0035,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.375137,USER-0046,DEV-0049,APP-0008,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.375148,USER-0019,DEV-0071,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.375213,USER-0046,DEV-0049,APP-0009,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.375282,USER-0015,DEV-0018,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.375292,USER-0011,DEV-0026,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.375302,USER-0043,DEV-0008,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.375365,USER-0013,DEV-0045,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.375465,USER-0024,DEV-0050,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.375566,USER-0023,DEV-0013,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.375577,USER-0036,DEV-0040,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.375652,USER-0009,DEV-0059,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.375809,USER-0020,DEV-0017,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.375847,USER-0005,DEV-0021,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.375894,USER-0012,DEV-0029,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.375936,USER-0014,DEV-0035,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.375987,USER-0045,DEV-0027,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.375999,USER-0048,DEV-0066,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.376123,USER-0023,DEV-0020,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.376135,USER-0043,DEV-0008,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.376146,USER-0021,DEV-0012,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.376185,USER-0021,DEV-0012,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.376400,USER-0019,DEV-0037,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.376418,USER-0036,DEV-0040,APP-0010,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.376436,USER-0003,DEV-0020,APP-0004,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.376712,USER-0032,DEV-0020,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.376788,USER-0010,DEV-0060,APP-0005,,False,Insufficient access level (required: 3); User risk score too high (max: 30)
+2025-10-12 21:38:50.376829,USER-0042,DEV-0006,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.376871,USER-0004,DEV-0068,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.376910,USER-0045,DEV-0070,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.377015,USER-0003,DEV-0052,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.377146,USER-0036,DEV-0063,APP-0004,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.377188,USER-0030,DEV-0053,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.377260,USER-0029,DEV-0053,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.377306,USER-0042,DEV-0006,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.377320,USER-0024,DEV-0050,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.377465,USER-0050,DEV-0032,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.377490,USER-0038,DEV-0055,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.377577,USER-0008,DEV-0024,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.377671,USER-0016,DEV-0044,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.377716,USER-0010,DEV-0015,APP-0008,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.377767,USER-0006,DEV-0031,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.377806,USER-0050,DEV-0032,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.377817,USER-0018,DEV-0016,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.377829,USER-0040,DEV-0027,APP-0004,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.377845,USER-0015,DEV-0044,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.377856,USER-0034,DEV-0002,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.377867,USER-0050,DEV-0032,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.377878,USER-0024,DEV-0050,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.377889,USER-0008,DEV-0024,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.377899,USER-0024,DEV-0050,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.377956,USER-0044,DEV-0025,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.378069,USER-0025,DEV-0002,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.378081,USER-0011,DEV-0051,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.378092,USER-0016,DEV-0001,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.378104,USER-0017,DEV-0018,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.378114,USER-0040,DEV-0027,APP-0003,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.378128,USER-0038,DEV-0055,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.378140,USER-0044,DEV-0036,APP-0002,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.378302,USER-0012,DEV-0054,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.378368,USER-0010,DEV-0060,APP-0002,,False,Insufficient access level (required: 3); User risk score too high (max: 30)
+2025-10-12 21:38:50.378427,USER-0035,DEV-0075,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.378440,USER-0035,DEV-0075,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.378454,USER-0002,DEV-0016,APP-0008,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.378472,USER-0006,DEV-0031,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.378641,USER-0023,DEV-0065,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.378652,USER-0038,DEV-0055,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.378663,USER-0009,DEV-0019,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.378695,USER-0012,DEV-0029,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.378741,USER-0001,DEV-0021,APP-0004,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.378754,USER-0017,DEV-0005,APP-0009,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.378829,USER-0042,DEV-0006,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.378914,USER-0040,DEV-0027,APP-0005,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.378993,USER-0010,DEV-0060,APP-0005,,False,Insufficient access level (required: 3); User risk score too high (max: 30)
+2025-10-12 21:38:50.379006,USER-0033,DEV-0053,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.379016,USER-0013,DEV-0045,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.379027,USER-0023,DEV-0026,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.379038,USER-0042,DEV-0006,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.379048,USER-0029,DEV-0024,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.379058,USER-0049,DEV-0018,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.379069,USER-0024,DEV-0050,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.379111,USER-0014,DEV-0035,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.379125,USER-0049,DEV-0043,APP-0003,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.379211,USER-0022,DEV-0028,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.379223,USER-0015,DEV-0028,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.379235,USER-0011,DEV-0026,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.379313,USER-0007,DEV-0030,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.379404,USER-0040,DEV-0027,APP-0003,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.379424,USER-0008,DEV-0024,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.379438,USER-0023,DEV-0026,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.379520,USER-0047,DEV-0034,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.379534,USER-0010,DEV-0015,APP-0006,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.379546,USER-0049,DEV-0043,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.379557,USER-0020,DEV-0065,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.379568,USER-0041,DEV-0025,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.379671,USER-0038,DEV-0055,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.379712,USER-0022,DEV-0031,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.379750,USER-0015,DEV-0031,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.379787,USER-0022,DEV-0027,APP-0008,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.379802,USER-0035,DEV-0075,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.379813,USER-0019,DEV-0037,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.379824,USER-0021,DEV-0012,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.379894,USER-0015,DEV-0004,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.379907,USER-0010,DEV-0015,APP-0003,,False,Insufficient access level (required: 3); User risk score too high (max: 30)
+2025-10-12 21:38:50.379953,USER-0046,DEV-0022,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.379992,USER-0013,DEV-0045,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.380003,USER-0044,DEV-0025,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.380074,USER-0029,DEV-0032,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.380355,USER-0041,DEV-0025,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.380505,USER-0049,DEV-0018,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.380515,USER-0050,DEV-0032,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.380601,USER-0045,DEV-0028,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.380682,USER-0028,DEV-0072,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.380721,USER-0050,DEV-0032,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.380758,USER-0041,DEV-0012,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.380768,USER-0025,DEV-0002,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.380777,USER-0012,DEV-0029,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.380866,USER-0007,DEV-0067,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.380904,USER-0030,DEV-0001,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.380914,USER-0021,DEV-0012,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.380959,USER-0027,DEV-0005,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.381006,USER-0033,DEV-0053,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.381015,USER-0018,DEV-0072,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.381085,USER-0007,DEV-0030,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.381104,USER-0038,DEV-0055,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.381114,USER-0028,DEV-0040,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.381153,USER-0007,DEV-0009,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.381189,USER-0014,DEV-0035,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.381233,USER-0002,DEV-0046,APP-0004,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.381247,USER-0001,DEV-0042,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.381258,USER-0001,DEV-0006,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.381269,USER-0017,DEV-0045,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.381305,USER-0032,DEV-0072,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.381316,USER-0039,DEV-0010,APP-0010,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.381326,USER-0012,DEV-0069,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.381336,USER-0046,DEV-0049,APP-0007,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.381398,USER-0050,DEV-0032,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.381467,USER-0003,DEV-0052,APP-0006,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.381478,USER-0032,DEV-0019,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.381546,USER-0029,DEV-0015,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.381557,USER-0038,DEV-0055,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.381634,USER-0019,DEV-0071,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.381671,USER-0041,DEV-0065,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.381685,USER-0036,DEV-0063,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.381697,USER-0038,DEV-0055,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.381875,USER-0018,DEV-0016,APP-0006,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.381947,USER-0040,DEV-0027,APP-0006,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.381961,USER-0003,DEV-0052,APP-0006,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.382030,USER-0028,DEV-0071,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.382040,USER-0050,DEV-0032,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.382104,USER-0004,DEV-0068,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.382148,USER-0038,DEV-0055,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.382161,USER-0018,DEV-0057,APP-0001,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.382292,USER-0029,DEV-0040,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.382308,USER-0011,DEV-0051,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.382318,USER-0042,DEV-0006,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.382336,USER-0016,DEV-0001,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.382346,USER-0017,DEV-0023,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.382356,USER-0032,DEV-0067,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.382366,USER-0014,DEV-0035,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.382430,USER-0046,DEV-0049,APP-0007,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.382440,USER-0011,DEV-0073,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.382450,USER-0028,DEV-0071,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.382537,USER-0021,DEV-0012,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.382659,USER-0002,DEV-0032,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.382674,USER-0015,DEV-0001,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.382684,USER-0046,DEV-0049,APP-0008,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.382700,USER-0033,DEV-0011,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.382712,USER-0008,DEV-0024,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.382726,USER-0019,DEV-0037,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.382772,USER-0012,DEV-0054,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.382783,USER-0048,DEV-0066,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.382793,USER-0025,DEV-0002,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.382915,USER-0017,DEV-0044,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.383015,USER-0013,DEV-0045,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.383170,USER-0011,DEV-0073,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.383180,USER-0025,DEV-0002,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.383267,USER-0007,DEV-0030,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.383278,USER-0010,DEV-0003,APP-0008,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.383316,USER-0006,DEV-0031,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.383354,USER-0021,DEV-0012,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.383364,USER-0011,DEV-0051,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.383373,USER-0012,DEV-0029,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.383383,USER-0007,DEV-0009,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.383393,USER-0046,DEV-0049,APP-0009,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.383417,USER-0044,DEV-0025,APP-0007,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.383431,USER-0001,DEV-0018,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.383562,USER-0007,DEV-0074,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.383707,USER-0048,DEV-0066,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.383718,USER-0013,DEV-0045,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.383728,USER-0021,DEV-0012,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.383744,USER-0006,DEV-0031,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.383754,USER-0032,DEV-0071,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.383764,USER-0047,DEV-0034,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.383800,USER-0010,DEV-0060,APP-0009,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.383811,USER-0002,DEV-0041,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.383821,USER-0040,DEV-0027,APP-0006,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.383834,USER-0046,DEV-0049,APP-0006,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.383844,USER-0044,DEV-0036,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.383882,USER-0015,DEV-0045,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.383892,USER-0019,DEV-0037,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.383902,USER-0047,DEV-0034,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.383917,USER-0021,DEV-0012,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.383927,USER-0008,DEV-0024,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.384015,USER-0013,DEV-0045,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.384159,USER-0021,DEV-0012,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384174,USER-0030,DEV-0032,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384187,USER-0004,DEV-0068,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384197,USER-0012,DEV-0029,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.384233,USER-0027,DEV-0038,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.384270,USER-0025,DEV-0002,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384280,USER-0036,DEV-0063,APP-0006,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.384323,USER-0015,DEV-0033,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384367,USER-0031,DEV-0023,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384381,USER-0042,DEV-0006,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384393,USER-0025,DEV-0033,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384403,USER-0012,DEV-0054,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.384413,USER-0006,DEV-0031,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384508,USER-0012,DEV-0054,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.384519,USER-0033,DEV-0011,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.384530,USER-0016,DEV-0039,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.384547,USER-0020,DEV-0065,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384590,USER-0041,DEV-0002,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384624,USER-0001,DEV-0039,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.384634,USER-0032,DEV-0005,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.384681,USER-0010,DEV-0060,APP-0002,,False,Insufficient access level (required: 3); User risk score too high (max: 30)
+2025-10-12 21:38:50.384722,USER-0044,DEV-0025,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.384788,USER-0032,DEV-0001,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.384826,USER-0025,DEV-0033,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384868,USER-0020,DEV-0065,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384884,USER-0018,DEV-0057,APP-0006,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.384921,USER-0011,DEV-0026,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384931,USER-0048,DEV-0066,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384941,USER-0047,DEV-0034,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.384951,USER-0040,DEV-0027,APP-0001,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.384963,USER-0033,DEV-0041,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.385007,USER-0006,DEV-0031,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.385018,USER-0014,DEV-0035,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.385055,USER-0046,DEV-0049,APP-0005,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.385065,USER-0030,DEV-0046,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.385103,USER-0023,DEV-0067,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.385140,USER-0008,DEV-0024,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.385151,USER-0019,DEV-0037,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.385168,USER-0020,DEV-0065,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.385177,USER-0024,DEV-0050,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.385216,USER-0012,DEV-0054,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.385237,USER-0040,DEV-0027,APP-0004,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.385254,USER-0018,DEV-0072,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.385267,USER-0016,DEV-0044,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.385305,USER-0038,DEV-0055,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.385559,USER-0038,DEV-0055,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.385569,USER-0023,DEV-0068,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.385580,USER-0019,DEV-0048,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.385643,USER-0024,DEV-0050,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.385761,USER-0017,DEV-0048,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.385770,USER-0045,DEV-0017,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.385780,USER-0019,DEV-0037,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.385816,USER-0001,DEV-0037,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.385849,USER-0021,DEV-0012,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.385911,USER-0018,DEV-0057,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.385922,USER-0014,DEV-0035,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.385960,USER-0021,DEV-0012,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.385985,USER-0018,DEV-0072,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.385996,USER-0001,DEV-0054,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.386005,USER-0016,DEV-0039,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.386269,USER-0035,DEV-0075,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.386280,USER-0003,DEV-0020,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.386319,USER-0015,DEV-0027,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.386331,USER-0042,DEV-0006,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.386374,USER-0017,DEV-0073,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.386400,USER-0026,DEV-0061,APP-0006,,False,"Device validation failed: Trust score too low (required: 70, current: 69)"
+2025-10-12 21:38:50.386411,USER-0035,DEV-0075,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.386449,USER-0049,DEV-0018,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.386460,USER-0030,DEV-0073,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.386470,USER-0016,DEV-0044,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.386512,USER-0035,DEV-0075,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.386563,USER-0004,DEV-0068,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.386574,USER-0018,DEV-0057,APP-0010,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.386667,USER-0014,DEV-0035,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.386704,USER-0010,DEV-0060,APP-0001,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:38:50.386771,USER-0008,DEV-0024,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.386837,USER-0022,DEV-0027,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.386875,USER-0047,DEV-0034,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.386992,USER-0022,DEV-0027,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.387008,USER-0047,DEV-0034,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.387136,USER-0017,DEV-0016,APP-0005,,False,Insufficient access level (required: 3); User risk score too high (max: 30)
+2025-10-12 21:38:50.387174,USER-0043,DEV-0008,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.387184,USER-0019,DEV-0037,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.387232,USER-0022,DEV-0066,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.387282,USER-0019,DEV-0048,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.387297,USER-0006,DEV-0031,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.387307,USER-0006,DEV-0031,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.387317,USER-0043,DEV-0008,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.387327,USER-0013,DEV-0045,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.387342,USER-0003,DEV-0020,APP-0004,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.387354,USER-0004,DEV-0068,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.387424,USER-0050,DEV-0032,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.387441,USER-0041,DEV-0067,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.387588,USER-0047,DEV-0034,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.387617,USER-0015,DEV-0026,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.387635,USER-0045,DEV-0058,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.387706,USER-0032,DEV-0038,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.387771,USER-0029,DEV-0043,APP-0010,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.387783,USER-0043,DEV-0008,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.387820,USER-0024,DEV-0050,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.387886,USER-0024,DEV-0050,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.387925,USER-0017,DEV-0023,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.387935,USER-0006,DEV-0031,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.387985,USER-0009,DEV-0058,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.388019,USER-0041,DEV-0051,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.388058,USER-0014,DEV-0035,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.388097,USER-0001,DEV-0068,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.388165,USER-0013,DEV-0045,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.388175,USER-0010,DEV-0015,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.388185,USER-0030,DEV-0030,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.388223,USER-0032,DEV-0048,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.388260,USER-0011,DEV-0073,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.388270,USER-0012,DEV-0069,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.388280,USER-0044,DEV-0036,APP-0003,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.388296,USER-0002,DEV-0074,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.388306,USER-0031,DEV-0028,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.388453,USER-0043,DEV-0008,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.388525,USER-0045,DEV-0039,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.388594,USER-0040,DEV-0027,APP-0002,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.388607,USER-0041,DEV-0025,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.388658,USER-0009,DEV-0019,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.388725,USER-0012,DEV-0029,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.388735,USER-0017,DEV-0015,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.388774,USER-0038,DEV-0055,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.388784,USER-0050,DEV-0032,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.388794,USER-0001,DEV-0021,APP-0004,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.388805,USER-0035,DEV-0075,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.388842,USER-0033,DEV-0053,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.388857,USER-0047,DEV-0034,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.388950,USER-0010,DEV-0015,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.388960,USER-0005,DEV-0064,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.388972,USER-0050,DEV-0032,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.389009,USER-0029,DEV-0056,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.389083,USER-0048,DEV-0066,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.389093,USER-0029,DEV-0029,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.389103,USER-0035,DEV-0075,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.389113,USER-0038,DEV-0055,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.389182,USER-0003,DEV-0052,APP-0009,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.389223,USER-0035,DEV-0075,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.389234,USER-0043,DEV-0008,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.389244,USER-0010,DEV-0015,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.389254,USER-0002,DEV-0035,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.389371,USER-0027,DEV-0038,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.389382,USER-0017,DEV-0064,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.389392,USER-0026,DEV-0061,APP-0007,,False,"Device validation failed: Trust score too low (required: 70, current: 69)"
+2025-10-12 21:38:50.389402,USER-0031,DEV-0023,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.389477,USER-0022,DEV-0004,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.389528,USER-0027,DEV-0038,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.389621,USER-0011,DEV-0073,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.389632,USER-0019,DEV-0048,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.389669,USER-0024,DEV-0050,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.389953,USER-0011,DEV-0073,APP-0005,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.389963,USER-0033,DEV-0011,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.390007,USER-0016,DEV-0001,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.390042,USER-0042,DEV-0006,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.390109,USER-0044,DEV-0036,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.390126,USER-0030,DEV-0021,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.390164,USER-0023,DEV-0059,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.390209,USER-0046,DEV-0049,APP-0006,,False,"Device validation failed: Trust score too low (required: 70, current: 61)"
+2025-10-12 21:38:50.390220,USER-0019,DEV-0071,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.390264,USER-0038,DEV-0055,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.390274,USER-0013,DEV-0045,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.390371,USER-0011,DEV-0026,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.390383,USER-0042,DEV-0006,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.390395,USER-0028,DEV-0021,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.390460,USER-0047,DEV-0034,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.390472,USER-0038,DEV-0055,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.390575,USER-0036,DEV-0063,APP-0004,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.390587,USER-0008,DEV-0024,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.390648,USER-0021,DEV-0012,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.390685,USER-0048,DEV-0066,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.390696,USER-0039,DEV-0010,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.390706,USER-0043,DEV-0008,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.390716,USER-0043,DEV-0008,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.390731,USER-0011,DEV-0051,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.390768,USER-0026,DEV-0013,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.390789,USER-0048,DEV-0066,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.391022,USER-0005,DEV-0056,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.391032,USER-0014,DEV-0035,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.391070,USER-0030,DEV-0066,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.391140,USER-0016,DEV-0044,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.391238,USER-0014,DEV-0035,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.391307,USER-0050,DEV-0032,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.391322,USER-0015,DEV-0069,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.391454,USER-0019,DEV-0037,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.391527,USER-0040,DEV-0027,APP-0006,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.391602,USER-0012,DEV-0054,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.391612,USER-0045,DEV-0043,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.391651,USER-0029,DEV-0008,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.391724,USER-0042,DEV-0006,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.391762,USER-0031,DEV-0028,APP-0002,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.391774,USER-0005,DEV-0021,APP-0010,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.391788,USER-0009,DEV-0047,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.391831,USER-0009,DEV-0059,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.391869,USER-0005,DEV-0064,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.391908,USER-0030,DEV-0029,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.391918,USER-0009,DEV-0047,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.391997,USER-0022,DEV-0012,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.392052,USER-0022,DEV-0033,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.392070,USER-0047,DEV-0034,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.392115,USER-0035,DEV-0075,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.392125,USER-0013,DEV-0045,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.392163,USER-0039,DEV-0010,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.392180,USER-0039,DEV-0010,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.392191,USER-0015,DEV-0010,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.392228,USER-0007,DEV-0009,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.392266,USER-0012,DEV-0029,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.392276,USER-0021,DEV-0012,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.392286,USER-0044,DEV-0036,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.392297,USER-0031,DEV-0023,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.392307,USER-0024,DEV-0050,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.392326,USER-0039,DEV-0010,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.392370,USER-0011,DEV-0026,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.392409,USER-0008,DEV-0024,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.392452,USER-0040,DEV-0027,APP-0004,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.392466,USER-0031,DEV-0028,APP-0003,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.392478,USER-0014,DEV-0035,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.392488,USER-0014,DEV-0035,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.392501,USER-0042,DEV-0006,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.392673,USER-0038,DEV-0055,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.392696,USER-0007,DEV-0067,APP-0008,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.392742,USER-0034,DEV-0018,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.392753,USER-0044,DEV-0025,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.393109,USER-0043,DEV-0008,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.393143,USER-0050,DEV-0032,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.393225,USER-0046,DEV-0022,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.393269,USER-0012,DEV-0029,APP-0009,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.393281,USER-0023,DEV-0033,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.393292,USER-0009,DEV-0058,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.393421,USER-0036,DEV-0063,APP-0003,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.393447,USER-0033,DEV-0041,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.393459,USER-0034,DEV-0057,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.393471,USER-0024,DEV-0050,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.393484,USER-0034,DEV-0022,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.393497,USER-0036,DEV-0040,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.393508,USER-0005,DEV-0021,APP-0009,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.393527,USER-0047,DEV-0034,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.393538,USER-0045,DEV-0014,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.393584,USER-0017,DEV-0058,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.393625,USER-0036,DEV-0040,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.393636,USER-0047,DEV-0034,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.393676,USER-0005,DEV-0064,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.393806,USER-0015,DEV-0074,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.393911,USER-0018,DEV-0057,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.394041,USER-0044,DEV-0036,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.394084,USER-0050,DEV-0032,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.394099,USER-0024,DEV-0050,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.394267,USER-0014,DEV-0035,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.394279,USER-0031,DEV-0028,APP-0007,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.394392,USER-0025,DEV-0002,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.394402,USER-0007,DEV-0030,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.394474,USER-0006,DEV-0031,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.394520,USER-0024,DEV-0050,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.394532,USER-0049,DEV-0043,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.394543,USER-0038,DEV-0055,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.394657,USER-0043,DEV-0008,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.394668,USER-0028,DEV-0017,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.394678,USER-0024,DEV-0050,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.394691,USER-0034,DEV-0031,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.394730,USER-0032,DEV-0062,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.394741,USER-0026,DEV-0004,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.394753,USER-0011,DEV-0073,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.394789,USER-0032,DEV-0061,APP-0006,,False,"Device validation failed: Trust score too low (required: 70, current: 69)"
+2025-10-12 21:38:50.394828,USER-0048,DEV-0066,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.394838,USER-0010,DEV-0060,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.394876,USER-0028,DEV-0060,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.394886,USER-0023,DEV-0064,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.394948,USER-0032,DEV-0064,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.394958,USER-0028,DEV-0003,APP-0006,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.394981,USER-0003,DEV-0052,APP-0004,,False,"Insufficient access level (required: 4); Authentication method not sufficient (required: ['mfa', 'biometric', 'certificate']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.394993,USER-0019,DEV-0037,APP-0003,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.395111,USER-0021,DEV-0012,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395121,USER-0020,DEV-0062,APP-0006,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.395133,USER-0032,DEV-0072,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.395143,USER-0022,DEV-0029,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.395153,USER-0050,DEV-0032,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395162,USER-0014,DEV-0035,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395255,USER-0022,DEV-0066,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395265,USER-0029,DEV-0032,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395279,USER-0001,DEV-0004,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.395316,USER-0048,DEV-0066,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395327,USER-0040,DEV-0027,APP-0005,read,True,All ZTA policies satisfied
+2025-10-12 21:38:50.395468,USER-0007,DEV-0067,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.395508,USER-0022,DEV-0035,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395518,USER-0006,DEV-0031,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395555,USER-0007,DEV-0009,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.395599,USER-0022,DEV-0071,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395610,USER-0011,DEV-0073,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395644,USER-0009,DEV-0058,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395706,USER-0035,DEV-0075,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395740,USER-0040,DEV-0027,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395750,USER-0030,DEV-0049,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.395766,USER-0001,DEV-0064,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.395776,USER-0024,DEV-0050,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.395793,USER-0006,DEV-0031,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395803,USER-0024,DEV-0050,APP-0006,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.395818,USER-0001,DEV-0008,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395858,USER-0047,DEV-0034,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395869,USER-0017,DEV-0030,APP-0006,,False,User risk score too high (max: 50)
+2025-10-12 21:38:50.395879,USER-0015,DEV-0068,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.395943,USER-0030,DEV-0036,APP-0001,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.395953,USER-0001,DEV-0063,APP-0008,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:38:50.396069,USER-0009,DEV-0059,APP-0010,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.396105,USER-0005,DEV-0056,APP-0006,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.396122,USER-0038,DEV-0055,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396188,USER-0036,DEV-0040,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.396297,USER-0024,DEV-0050,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.396308,USER-0038,DEV-0055,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396345,USER-0011,DEV-0051,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396382,USER-0033,DEV-0041,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396426,USER-0015,DEV-0040,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.396436,USER-0040,DEV-0027,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396450,USER-0047,DEV-0034,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396459,USER-0028,DEV-0019,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396470,USER-0045,DEV-0032,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396479,USER-0032,DEV-0018,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396528,USER-0048,DEV-0066,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396538,USER-0038,DEV-0055,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396593,USER-0015,DEV-0036,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.396667,USER-0049,DEV-0043,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.396678,USER-0036,DEV-0040,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.396688,USER-0049,DEV-0043,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.396698,USER-0028,DEV-0055,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396709,USER-0042,DEV-0006,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396794,USER-0024,DEV-0050,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.396805,USER-0012,DEV-0069,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396821,USER-0034,DEV-0051,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396863,USER-0038,DEV-0055,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396906,USER-0030,DEV-0036,APP-0010,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:38:50.396918,USER-0035,DEV-0075,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396959,USER-0027,DEV-0005,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:38:50.396969,USER-0014,DEV-0035,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396979,USER-0026,DEV-0004,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.396989,USER-0032,DEV-0006,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.396998,USER-0021,DEV-0012,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.397008,USER-0030,DEV-0053,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.397046,USER-0036,DEV-0007,APP-0005,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:38:50.397185,USER-0010,DEV-0060,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.397236,USER-0017,DEV-0020,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.397329,USER-0013,DEV-0045,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.397415,USER-0002,DEV-0070,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.397459,USER-0031,DEV-0023,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.397516,USER-0043,DEV-0008,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:50.397553,USER-0010,DEV-0015,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.397610,USER-0010,DEV-0060,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:38:50.397643,USER-0003,DEV-0020,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:52.863483,USER-0006,DEV-0031,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:55.777735,USER-0040,DEV-0027,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:57.348982,USER-0004,DEV-0068,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:38:59.266228,USER-0042,DEV-0006,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:01.163292,USER-0028,DEV-0026,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:01.776097,USER-0044,DEV-0036,APP-0007,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:39:02.809370,USER-0027,DEV-0005,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:39:05.688534,USER-0047,DEV-0034,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:06.167500,USER-0049,DEV-0043,APP-0007,,False,"Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:39:09.818778,USER-0042,DEV-0006,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:13.065776,USER-0031,DEV-0023,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:14.036499,USER-0036,DEV-0063,APP-0007,,False,"Insufficient access level (required: 3); Authentication method not sufficient (required: ['mfa', 'biometric']); User risk score too high (max: 30)"
+2025-10-12 21:39:16.936055,USER-0012,DEV-0069,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:18.859366,USER-0019,DEV-0048,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:39:19.309368,USER-0045,DEV-0050,APP-0003,,False,User risk score too high (max: 30)
+2025-10-12 21:39:21.409374,USER-0031,DEV-0028,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:39:22.279465,USER-0029,DEV-0003,APP-0007,,False,User risk score too high (max: 30)
+2025-10-12 21:39:24.752691,USER-0042,DEV-0006,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:26.867202,USER-0016,DEV-0044,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:27.391688,USER-0031,DEV-0028,APP-0007,,False,"Device validation failed: Trust score too low (required: 70, current: 55)"
+2025-10-12 21:39:29.487601,USER-0023,DEV-0068,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:31.976124,USER-0026,DEV-0004,APP-0004,,False,Device validation failed: Device is not compliant
+2025-10-12 21:39:35.477763,USER-0021,DEV-0012,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:35.949177,USER-0030,DEV-0050,APP-0009,,False,"Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)"
+2025-10-12 21:39:38.193982,USER-0020,DEV-0017,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:40.171061,USER-0049,DEV-0018,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:43.015887,USER-0038,DEV-0055,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:46.539628,USER-0006,DEV-0031,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:49.573644,USER-0011,DEV-0073,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:52.069766,USER-0028,DEV-0059,APP-0005,,False,User risk score too high (max: 30)
+2025-10-12 21:39:52.837328,USER-0036,DEV-0063,APP-0006,,False,Insufficient access level (required: 2); User risk score too high (max: 50)
+2025-10-12 21:39:55.630917,USER-0049,DEV-0043,APP-0002,,False,Device validation failed: Device is not compliant
+2025-10-12 21:39:58.842501,USER-0001,DEV-0041,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:39:59.484061,USER-0007,DEV-0030,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:40:00.275092,USER-0027,DEV-0005,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:40:00.726090,USER-0007,DEV-0067,APP-0004,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:40:04.243533,USER-0006,DEV-0031,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:06.576213,USER-0026,DEV-0004,APP-0003,,False,"Device validation failed: Trust score too low (required: 70, current: 52)"
+2025-10-12 21:40:07.468178,USER-0024,DEV-0050,APP-0004,,False,User risk score too high (max: 30)
+2025-10-12 21:40:10.545248,USER-0047,DEV-0034,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:12.934273,USER-0015,DEV-0013,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:14.603704,USER-0035,DEV-0075,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:15.161401,USER-0027,DEV-0038,APP-0010,,False,User risk score too high (max: 50)
+2025-10-12 21:40:17.479027,USER-0040,DEV-0027,APP-0006,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:19.779338,USER-0006,DEV-0031,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:21.398232,USER-0035,DEV-0075,APP-0009,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:22.023066,USER-0024,DEV-0050,APP-0002,,False,User risk score too high (max: 30)
+2025-10-12 21:40:23.657773,USER-0016,DEV-0039,APP-0001,,False,Device validation failed: Device is not compliant
+2025-10-12 21:40:25.448107,USER-0022,DEV-0045,APP-0007,,False,Device validation failed: Device is not compliant
+2025-10-12 21:40:27.232980,USER-0035,DEV-0075,APP-0003,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:30.614395,USER-0032,DEV-0006,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:32.602902,USER-0025,DEV-0002,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:35.761326,USER-0002,DEV-0002,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:37.913740,USER-0035,DEV-0075,APP-0007,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:40.112012,USER-0021,DEV-0012,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:42.840890,USER-0019,DEV-0071,APP-0010,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:44.452952,USER-0047,DEV-0034,APP-0002,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:46.493008,USER-0025,DEV-0002,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:49.741511,USER-0014,DEV-0035,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:52.359056,USER-0006,DEV-0031,APP-0008,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:54.148117,USER-0020,DEV-0065,APP-0005,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:56.438643,USER-0011,DEV-0051,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:40:59.041902,USER-0020,DEV-0017,APP-0004,,False,Device validation failed: Device is quarantined
+2025-10-12 21:41:01.182413,USER-0025,DEV-0033,APP-0001,,False,Device validation failed: Device is quarantined
+2025-10-12 21:41:02.583827,USER-0046,DEV-0049,APP-0008,,False,Device validation failed: Device is not compliant
+2025-10-12 21:41:03.143402,USER-0029,DEV-0052,APP-0008,,False,User risk score too high (max: 30)
+2025-10-12 21:41:03.576368,USER-0010,DEV-0003,APP-0008,,False,Insufficient access level (required: 4); User risk score too high (max: 30)
+2025-10-12 21:41:05.621284,USER-0033,DEV-0041,APP-0007,,False,Device validation failed: Device is quarantined
