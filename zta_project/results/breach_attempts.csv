@@ -1,26 +1,26 @@
 breach_type,timestamp,attacker_id,target,prevented,prevention_method,victim_id,attacker_device,insider_id,device_id
-lateral_movement,2025-10-12 21:38:50.397134,USER-0031,Financial System,True,"['Micro-segmentation', 'Access control policies']",,,,
-credential_theft,2025-10-12 21:38:50.397146,,,True,"['MFA requirement', 'Device trust validation']",USER-0020,DEV-0040,,
-insider_threat,2025-10-12 21:38:50.397173,,Code Repository,True,"['Role-based access control', 'Least privilege principle']",,,USER-0010,
-device_compromise,2025-10-12 21:38:50.397204,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0020
-privilege_escalation,2025-10-12 21:38:50.397228,USER-0017,Financial System,True,"['Access level enforcement', 'Continuous authorization']",,,,
-lateral_movement,2025-10-12 21:38:50.397274,USER-0013,Email System,False,[],,,,
-credential_theft,2025-10-12 21:38:50.397291,,,True,"['MFA requirement', 'Device trust validation']",USER-0036,DEV-0074,,
-insider_threat,2025-10-12 21:38:50.397320,,File Share,True,"['Role-based access control', 'Least privilege principle']",,,USER-0013,
-device_compromise,2025-10-12 21:38:50.397344,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0051
-privilege_escalation,2025-10-12 21:38:50.397361,USER-0003,HR Portal,True,['Authentication failure'],,,,
-lateral_movement,2025-10-12 21:38:50.397374,USER-0019,Video Conferencing,False,[],,,,
-credential_theft,2025-10-12 21:38:50.397386,,,True,"['MFA requirement', 'Device trust validation']",USER-0040,DEV-0065,,
-insider_threat,2025-10-12 21:38:50.397407,,Customer Database,True,"['Role-based access control', 'Least privilege principle']",,,USER-0002,
-device_compromise,2025-10-12 21:38:50.397428,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0013
-privilege_escalation,2025-10-12 21:38:50.397450,USER-0031,CRM Platform,True,"['Access level enforcement', 'Continuous authorization']",,,,
-lateral_movement,2025-10-12 21:38:50.397476,USER-0022,Project Management,False,[],,,,
-credential_theft,2025-10-12 21:38:50.397487,,,True,"['MFA requirement', 'Device trust validation']",USER-0036,DEV-0017,,
-insider_threat,2025-10-12 21:38:50.397506,,HR Portal,True,"['Role-based access control', 'Least privilege principle']",,,USER-0043,
-device_compromise,2025-10-12 21:38:50.397527,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0070
-privilege_escalation,2025-10-12 21:38:50.397545,USER-0010,Code Repository,True,"['Access level enforcement', 'Continuous authorization']",,,,
-lateral_movement,2025-10-12 21:38:50.397571,USER-0048,Analytics Dashboard,False,[],,,,
-credential_theft,2025-10-12 21:38:50.397582,,,True,"['MFA requirement', 'Device trust validation']",USER-0011,DEV-0074,,
-insider_threat,2025-10-12 21:38:50.397602,,File Share,True,"['Role-based access control', 'Least privilege principle']",,,USER-0010,
-device_compromise,2025-10-12 21:38:50.397622,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0034
-privilege_escalation,2025-10-12 21:38:50.397636,USER-0003,Customer Database,True,"['Access level enforcement', 'Continuous authorization']",,,,
+lateral_movement,2025-11-03 21:24:59.863312,USER-0038,Video Conferencing,False,[],,,,
+credential_theft,2025-11-03 21:24:59.863324,,,True,"['MFA requirement', 'Device trust validation']",USER-0008,DEV-0002,,
+insider_threat,2025-11-03 21:24:59.863346,,Customer Database,True,"['Role-based access control', 'Least privilege principle']",,,USER-0041,
+device_compromise,2025-11-03 21:24:59.863379,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0046
+privilege_escalation,2025-11-03 21:24:59.863403,USER-0003,Email System,True,"['Access level enforcement', 'Continuous authorization']",,,,
+lateral_movement,2025-11-03 21:24:59.863434,USER-0047,File Share,True,"['Micro-segmentation', 'Access control policies']",,,,
+credential_theft,2025-11-03 21:24:59.863447,,,True,"['MFA requirement', 'Device trust validation']",USER-0017,DEV-0019,,
+insider_threat,2025-11-03 21:24:59.863470,,File Share,True,"['Role-based access control', 'Least privilege principle']",,,USER-0003,
+device_compromise,2025-11-03 21:24:59.863497,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0050
+privilege_escalation,2025-11-03 21:24:59.863512,USER-0001,Customer Database,True,['Authentication failure'],,,,
+lateral_movement,2025-11-03 21:24:59.863525,USER-0022,Financial System,False,[],,,,
+credential_theft,2025-11-03 21:24:59.863537,,,True,"['MFA requirement', 'Device trust validation']",USER-0032,DEV-0072,,
+insider_threat,2025-11-03 21:24:59.863559,,Email System,True,"['Role-based access control', 'Least privilege principle']",,,USER-0044,
+device_compromise,2025-11-03 21:24:59.863583,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0015
+privilege_escalation,2025-11-03 21:24:59.863597,USER-0044,Email System,True,"['Access level enforcement', 'Continuous authorization']",,,,
+lateral_movement,2025-11-03 21:24:59.863624,USER-0039,CRM Platform,True,"['Micro-segmentation', 'Access control policies']",,,,
+credential_theft,2025-11-03 21:24:59.863636,,,True,"['MFA requirement', 'Device trust validation']",USER-0043,DEV-0056,,
+insider_threat,2025-11-03 21:24:59.863655,,File Share,True,"['Role-based access control', 'Least privilege principle']",,,USER-0003,
+device_compromise,2025-11-03 21:24:59.863681,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0032
+privilege_escalation,2025-11-03 21:24:59.863700,USER-0007,Customer Database,True,['Authentication failure'],,,,
+lateral_movement,2025-11-03 21:24:59.863714,USER-0040,CRM Platform,True,"['Micro-segmentation', 'Access control policies']",,,,
+credential_theft,2025-11-03 21:24:59.863726,,,True,"['MFA requirement', 'Device trust validation']",USER-0039,DEV-0027,,
+insider_threat,2025-11-03 21:24:59.863740,,Analytics Dashboard,True,"['Role-based access control', 'Least privilege principle']",,,USER-0042,
+device_compromise,2025-11-03 21:24:59.863765,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0028
+privilege_escalation,2025-11-03 21:24:59.863783,USER-0004,File Share,True,"['Access level enforcement', 'Continuous authorization']",,,,
