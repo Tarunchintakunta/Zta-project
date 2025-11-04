@@ -4,6 +4,7 @@ Device Management and Posture Assessment component for ZTA
 from datetime import datetime, timedelta
 from typing import Dict, List
 from models.device import Device
+from core.ai_engine import AIAnomalyDetector
 
 
 class DeviceManager:
@@ -14,6 +15,9 @@ class DeviceManager:
         self.posture_check_logs = []
         self.quarantined_devices = set()
         self.compliance_history = []
+        self.min_trust_score = 70  # Minimum trust score required for access
+        self.ai_detector = AIAnomalyDetector()  # AI-powered threat detection
+        self.device_activity_logs = {}  # Track device activity for ML analysis
         
     def register_device(self, device: Device):
         """Register a device in the system"""
@@ -203,6 +207,32 @@ class DeviceManager:
             'posture_distribution': posture_distribution,
             'total_posture_checks': len(self.posture_check_logs)
         }
+    
+    def detect_malware_threat(self, device_id: str, activity_data: Dict) -> Dict:
+        """Use AI to detect malware threats on device"""
+        if device_id not in self.devices:
+            return {'threat_score': 0.0, 'threat_level': 'low'}
+        
+        # Track device activity for ML analysis
+        if device_id not in self.device_activity_logs:
+            self.device_activity_logs[device_id] = []
+        
+        self.device_activity_logs[device_id].append({
+            'timestamp': datetime.now(),
+            'activity': activity_data
+        })
+        
+        # Keep only recent activity (last 100 events)
+        self.device_activity_logs[device_id] = self.device_activity_logs[device_id][-100:]
+        
+        # Use AI model to detect threats
+        threat_result = self.ai_detector.detect_malware_threat(device_id, activity_data)
+        
+        # If high threat detected, quarantine device
+        if threat_result['threat_level'] == 'high':
+            self.quarantine_device(device_id, f"AI detected high malware threat: {threat_result['threat_score']:.2f}")
+        
+        return threat_result
     
     def get_device_health_report(self) -> List[Dict]:
         """Generate health report for all devices"""

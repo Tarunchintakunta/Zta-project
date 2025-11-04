@@ -6,6 +6,7 @@ import secrets
 from datetime import datetime, timedelta
 from typing import Dict, Optional, List
 from models.user import User
+from core.ai_engine import AIAnomalyDetector
 
 
 class IdentityManager:
@@ -16,6 +17,8 @@ class IdentityManager:
         self.active_sessions = {}
         self.authentication_logs = []
         self.session_timeout = 30  # minutes
+        self.enable_continuous_auth = True  # Enable continuous authentication by default
+        self.ai_detector = AIAnomalyDetector()  # AI-powered anomaly detection
         
     def register_user(self, user: User):
         """Register a user in the identity system"""
@@ -127,6 +130,10 @@ class IdentityManager:
     
     def continuous_authentication(self, session_token: str, behavior_data: Dict) -> bool:
         """Perform continuous authentication based on user behavior"""
+        # If continuous auth is disabled, always return True
+        if not self.enable_continuous_auth:
+            return True
+            
         session_validation = self.validate_session(session_token)
         
         if not session_validation['valid']:
@@ -149,29 +156,26 @@ class IdentityManager:
         return True
     
     def _calculate_anomaly_score(self, user: User, behavior_data: Dict) -> float:
-        """Calculate anomaly score based on user behavior"""
-        import random
+        """Calculate anomaly score using AI-powered behavioral analytics"""
+        # Use AI model for anomaly detection
+        ai_result = self.ai_detector.detect_behavioral_anomaly(user.user_id, behavior_data)
         
-        # Simplified anomaly detection
-        # In real implementation, this would use ML models
-        anomaly_factors = []
+        # Train model if we have historical data
+        if user.user_id in self.users and len(self.authentication_logs) > 10:
+            # Extract behavior history from logs
+            user_logs = [log for log in self.authentication_logs 
+                        if log.get('user_id') == user.user_id and log.get('success')]
+            if len(user_logs) > 5:
+                behavior_history = [{
+                    'hour': log['timestamp'].hour if isinstance(log['timestamp'], datetime) else 12,
+                    'resource': log.get('context', {}).get('resource', ''),
+                    'location': log.get('context', {}).get('location', ''),
+                    'device_id': log.get('context', {}).get('device_id', ''),
+                    'date': str(log['timestamp'].date()) if isinstance(log['timestamp'], datetime) else ''
+                } for log in user_logs[-20:]]  # Last 20 successful logins
+                self.ai_detector.train_on_user_behavior(user.user_id, behavior_history)
         
-        # Check location anomaly
-        if behavior_data.get('location') != user.location:
-            anomaly_factors.append(0.3)
-        
-        # Check time anomaly (accessing outside normal hours)
-        current_hour = datetime.now().hour
-        if current_hour < 6 or current_hour > 22:
-            anomaly_factors.append(0.2)
-        
-        # Check access pattern anomaly
-        if behavior_data.get('unusual_resource_access'):
-            anomaly_factors.append(0.4)
-        
-        # Add some randomness for simulation
-        base_anomaly = sum(anomaly_factors) if anomaly_factors else 0
-        return min(1.0, base_anomaly + random.uniform(0, 0.2))
+        return ai_result['anomaly_score']
     
     def _log_authentication(self, user_id: str, success: bool, reason: str, context: Dict):
         """Log authentication attempt"""

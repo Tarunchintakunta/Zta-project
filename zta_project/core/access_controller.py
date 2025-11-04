@@ -55,9 +55,9 @@ class AccessController:
             return self._deny_access('User not found', session_token, 
                                     device_id, app_id, timestamp)
         
-        # Validate device
+        # Validate device using min_trust_score from device_manager
         device_validation = self.device_manager.validate_device_for_access(
-            device_id, self.policies['min_device_trust_score'])
+            device_id, self.device_manager.min_trust_score)
         
         if not device_validation['valid']:
             return self._deny_access(f"Device validation failed: {device_validation['reason']}", 
