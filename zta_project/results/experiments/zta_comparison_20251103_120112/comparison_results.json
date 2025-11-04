@@ -1,0 +1,59 @@
+{
+  "experiment_name": "zta_comparison_20251103_120112",
+  "timestamp": "2025-11-03T12:03:37.543856",
+  "breach_prevention": {
+    "baseline_rate": 0.96,
+    "zta_rate": 0.92,
+    "improvement_percent": -3.9999999999999925,
+    "baseline_prevented": 24,
+    "zta_prevented": 23,
+    "total_attempts": 25
+  },
+  "security_metrics": {
+    "security_score": {
+      "baseline": 61.40093755747256,
+      "zta": 58.02031941321422,
+      "improvement": -3.3806181442583423
+    },
+    "device_compliance": {
+      "baseline": 0.3466666666666667,
+      "zta": 0.29333333333333333,
+      "improvement": -5.333333333333334
+    },
+    "authentication_success": {
+      "baseline": 0.9256576439191765,
+      "zta": 0.9000774593338497,
+      "improvement": -2.5580184585326737
+    }
+  },
+  "usability_metrics": {
+    "usability_score": {
+      "baseline": 41.67731049734192,
+      "zta": 41.0211433394133,
+      "change": -0.6561671579286212
+    },
+    "task_completion": {
+      "baseline": 0.0,
+      "zta": 0.0,
+      "change": 0.0
+    }
+  },
+  "access_control": {
+    "denial_rate": {
+      "baseline": 0.968944099378882,
+      "zta": 0.9757281553398058,
+      "increase": 0.6784055960923796
+    },
+    "grant_rate": {
+      "baseline": 0.031055900621118012,
+      "zta": 0.024271844660194174,
+      "change": -0.6784055960923838
+    }
+  },
+  "improvements": {
+    "breach_prevention_improvement": -3.9999999999999925,
+    "security_score_improvement": -3.3806181442583423,
+    "device_compliance_improvement": -5.333333333333334,
+    "authentication_improvement": -2.5580184585326737
+  }
+}
