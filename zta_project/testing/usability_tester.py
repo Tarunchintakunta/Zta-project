@@ -71,12 +71,14 @@ class UsabilityTester:
         posture_result = self.environment.device_manager.perform_posture_assessment(device.device_id)
         task_result['steps_required'] += 1
         
-        if not posture_result['compliant']:
+        if not posture_result['compliant'] or posture_result['trust_score'] < 70:
             task_result['errors_encountered'] += 1
             # User might need to remediate
             if random.random() < 0.7:  # 70% chance user can fix it
                 time.sleep(random.uniform(1, 3))  # Remediation time
                 device.patch_device()
+                # Try to release from quarantine if it was quarantined
+                self.environment.device_manager.release_from_quarantine(device.device_id)
                 task_result['steps_required'] += 1
             else:
                 task_result['completed'] = False
@@ -84,7 +86,19 @@ class UsabilityTester:
                 return task_result
         
         # Step 3: Access resource
-        application = random.choice(self.environment.applications)
+        # Reset user risk score to simulate a valid user session (or support resolution)
+        user.risk_score = 0
+        
+        # Select an application that the user is allowed to access based on level
+        valid_apps = [app for app in self.environment.applications 
+                     if user.access_level >= app.required_access_level]
+        
+        if valid_apps:
+            application = random.choice(valid_apps)
+        else:
+            # Fallback if no apps match (should be rare)
+            application = random.choice(self.environment.applications)
+            
         time.sleep(random.uniform(0.2, 0.5))  # Simulate access time
         
         access_result = self.environment.access_controller.request_access(

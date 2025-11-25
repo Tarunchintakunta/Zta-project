@@ -1,21 +1,28 @@
 """
 Hybrid Work Environment Simulator
+Uses realistic behavior generation (time-based, role-based, sequence-based)
+instead of fully random generation for scientific rigor.
 """
 import random
 from datetime import datetime, timedelta
-from typing import List, Dict
+from typing import List, Dict, Optional
 from faker import Faker
 
 from models import User, Device, Application
 from core import IdentityManager, DeviceManager, AccessController, MonitoringSystem
+from simulation.realistic_behavior_generator import RealisticBehaviorGenerator
 import config
 
 
 class HybridWorkEnvironment:
-    """Simulates a hybrid work environment with ZTA implementation"""
+    """
+    Simulates a hybrid work environment with ZTA implementation.
+    Uses realistic behavior generation to avoid circular logic.
+    """
     
-    def __init__(self):
+    def __init__(self, use_realistic_generation: bool = True):
         self.faker = Faker()
+        self.use_realistic_generation = use_realistic_generation
         
         # Initialize core components
         self.identity_manager = IdentityManager()
@@ -28,9 +35,16 @@ class HybridWorkEnvironment:
         self.devices = []
         self.applications = []
         
+        # Realistic behavior generator (initialized after users/devices/apps are created)
+        self.behavior_generator: Optional[RealisticBehaviorGenerator] = None
+        
         # Simulation state
         self.current_day = 0
         self.simulation_logs = []
+        
+        # Track training vs testing phase to avoid circular logic
+        self.training_phase = True
+        self.training_days = None  # Will be set based on train/test split
         
     def setup_environment(self):
         """Set up the simulated environment with users, devices, and applications"""
@@ -47,6 +61,13 @@ class HybridWorkEnvironment:
         # Create applications
         print(f"Creating {config.NUM_APPLICATIONS} applications...")
         self._create_applications()
+        
+        # Initialize realistic behavior generator
+        if self.use_realistic_generation:
+            self.behavior_generator = RealisticBehaviorGenerator(
+                self.users, self.devices, self.applications
+            )
+            print("Realistic behavior generator initialized (time-based, role-based, sequence-based)")
         
         print("Environment setup complete!\n")
     
@@ -105,11 +126,51 @@ class HybridWorkEnvironment:
             self.applications.append(application)
             self.access_controller.register_application(application)
     
+    def set_training_phase(self, training: bool, training_days: Optional[int] = None):
+        """
+        Set whether we're in training or testing phase.
+        This helps avoid circular logic: train on early data, test on later data.
+        """
+        self.training_phase = training
+        self.training_days = training_days
+    
     def simulate_day(self, day_number: int):
-        """Simulate one day of activity in the hybrid work environment"""
+        """
+        Simulate one day of activity in the hybrid work environment.
+        Uses realistic behavior generation if enabled.
+        """
         self.current_day = day_number
         
-        # Simulate various activities throughout the day
+        # Use realistic generation if enabled
+        if self.use_realistic_generation and self.behavior_generator:
+            self._simulate_day_realistic(day_number)
+        else:
+            # Fallback to original random generation
+            self._simulate_day_random()
+    
+    def _simulate_day_realistic(self, day_number: int):
+        """Simulate day using realistic behavior generation"""
+        # Generate time-based events
+        events = self.behavior_generator.generate_time_based_events(
+            day_number, config.EVENTS_PER_DAY
+        )
+        
+        for event in events:
+            event_type = event.get('event_type', 'authentication')
+            
+            if event_type == 'authentication':
+                self._simulate_authentication_realistic(event)
+            elif event_type == 'access_request':
+                self._simulate_access_request_realistic(event)
+            elif event_type == 'device_check':
+                self._simulate_device_check()
+            else:
+                # Fallback for anomalies
+                if random.random() < 0.05:  # 5% chance of anomaly
+                    self._simulate_anomalous_behavior()
+    
+    def _simulate_day_random(self):
+        """Original random simulation (fallback)"""
         for _ in range(config.EVENTS_PER_DAY):
             event_type = random.choices(
                 ['authentication', 'access_request', 'device_check', 'anomaly'],
@@ -124,6 +185,97 @@ class HybridWorkEnvironment:
                 self._simulate_device_check()
             elif event_type == 'anomaly':
                 self._simulate_anomalous_behavior()
+    
+    def _simulate_authentication_realistic(self, event: Dict):
+        """Simulate authentication using realistic event data"""
+        user = event.get('user')
+        device = event.get('device')
+        context = event.get('context', {})
+        
+        if not user or not device:
+            return self._simulate_authentication()  # Fallback
+        
+        result = self.identity_manager.authenticate_user(
+            user.user_id,
+            'password123',
+            '123456' if user.authentication_method == 'mfa' else None,
+            context
+        )
+        
+        # Log event
+        self.monitoring_system.log_event(
+            'authentication',
+            'low' if result['success'] else 'medium',
+            f"Authentication {'successful' if result['success'] else 'failed'} for user {user.user_id}",
+            {'user_id': user.user_id, 'device_id': device.device_id}
+        )
+        
+        self.monitoring_system.metrics['authentication_events'] += 1
+        
+        # Record activity for sequence-based generation
+        if self.behavior_generator:
+            self.behavior_generator.record_activity(user.user_id, {
+                'resource_name': 'authentication',
+                'timestamp': context.get('timestamp', datetime.now())
+            })
+        
+        return result
+    
+    def _simulate_access_request_realistic(self, event: Dict):
+        """Simulate access request using realistic event data"""
+        user = event.get('user')
+        device = event.get('device')
+        application = event.get('application')
+        context = event.get('context', {})
+        
+        if not user or not device or not application:
+            return self._simulate_access_request()  # Fallback
+        
+        # First authenticate
+        auth_result = self.identity_manager.authenticate_user(
+            user.user_id,
+            'password123',
+            '123456' if user.authentication_method == 'mfa' else None
+        )
+        
+        if not auth_result['success']:
+            return
+        
+        session_token = auth_result['session_token']
+        
+        # Request access
+        access_result = self.access_controller.request_access(
+            session_token,
+            device.device_id,
+            application.app_id,
+            'read',
+            context
+        )
+        
+        # Log event
+        self.monitoring_system.log_event(
+            'access_request',
+            'low' if access_result['access_granted'] else 'medium',
+            f"Access {'granted' if access_result['access_granted'] else 'denied'} for {user.user_id} to {application.name}",
+            {
+                'user_id': user.user_id,
+                'device_id': device.device_id,
+                'app_id': application.app_id,
+                'granted': access_result['access_granted']
+            }
+        )
+        
+        self.monitoring_system.metrics['access_requests'] += 1
+        
+        if not access_result['access_granted']:
+            self.monitoring_system.metrics['policy_violations'] += 1
+        
+        # Record activity for sequence-based generation
+        if self.behavior_generator:
+            self.behavior_generator.record_activity(user.user_id, {
+                'resource_name': application.name,
+                'timestamp': context.get('timestamp', datetime.now())
+            })
     
     def _simulate_authentication(self):
         """Simulate user authentication attempt"""

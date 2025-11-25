@@ -61,24 +61,57 @@ class ExperimentRunner:
         # Set device compliance requirements
         environment.device_manager.min_trust_score = 70
     
-    def run_baseline_scenario(self) -> Dict:
-        """Run baseline scenario with ZTA controls disabled"""
+    def run_baseline_scenario(self, train_test_split: float = 0.7) -> Dict:
+        """
+        Run baseline scenario with ZTA controls disabled.
+        Uses proper train/test split to avoid circular logic.
+        
+        Args:
+            train_test_split: Proportion of days for training (rest for testing)
+        """
         print("\n" + "="*80)
         print("RUNNING BASELINE SCENARIO (ZTA Controls: OFF)")
         print("="*80)
         
         # Create fresh environment
-        environment = HybridWorkEnvironment()
+        environment = HybridWorkEnvironment(use_realistic_generation=True)
         environment.setup_environment()
         
         # Disable ZTA controls
         self.disable_zta_controls(environment)
         
-        # Run simulation
-        print("\nSimulating normal operations...")
-        for day in range(1, config.SIMULATION_DAYS + 1):
+        # Calculate training days
+        training_days = int(config.SIMULATION_DAYS * train_test_split)
+        test_days = config.SIMULATION_DAYS - training_days
+        
+        # PHASE 1: TRAINING - Generate data and train ML models
+        print(f"\n[PHASE 1] Training Phase: Days 1-{training_days}")
+        print("Generating training data and training ML models...")
+        environment.set_training_phase(True, training_days)
+        environment.identity_manager.set_training_phase(True)  # Enable training in identity manager
+        
+        for day in range(1, training_days + 1):
             if day % 5 == 0:
-                print(f"  Day {day}/{config.SIMULATION_DAYS}")
+                print(f"  Training Day {day}/{training_days}")
+            environment.simulate_day(day)
+            
+            # Train ML models periodically during training phase
+            if day % 7 == 0:  # Train weekly
+                self._train_ml_models(environment)
+        
+        # Final training on all training data
+        print("\nFinalizing ML model training on training data...")
+        self._train_ml_models(environment)
+        
+        # PHASE 2: TESTING - Evaluate on unseen data (no retraining)
+        print(f"\n[PHASE 2] Testing Phase: Days {training_days+1}-{config.SIMULATION_DAYS}")
+        print("Evaluating on test data (models frozen, no retraining)...")
+        environment.set_training_phase(False, training_days)
+        environment.identity_manager.set_training_phase(False)  # Disable training in identity manager
+        
+        for day in range(training_days + 1, config.SIMULATION_DAYS + 1):
+            if (day - training_days) % 5 == 0:
+                print(f"  Test Day {day - training_days}/{test_days}")
             environment.simulate_day(day)
         
         # Run breach simulations
@@ -118,24 +151,57 @@ class ExperimentRunner:
         print("\n✓ Baseline scenario completed!")
         return results
     
-    def run_zta_scenario(self) -> Dict:
-        """Run ZTA scenario with full Zero Trust controls enabled"""
+    def run_zta_scenario(self, train_test_split: float = 0.7) -> Dict:
+        """
+        Run ZTA scenario with full Zero Trust controls enabled.
+        Uses proper train/test split to avoid circular logic.
+        
+        Args:
+            train_test_split: Proportion of days for training (rest for testing)
+        """
         print("\n" + "="*80)
         print("RUNNING ZTA SCENARIO (ZTA Controls: ON)")
         print("="*80)
         
         # Create fresh environment
-        environment = HybridWorkEnvironment()
+        environment = HybridWorkEnvironment(use_realistic_generation=True)
         environment.setup_environment()
         
         # Enable ZTA controls
         self.enable_zta_controls(environment)
         
-        # Run simulation
-        print("\nSimulating normal operations with ZTA...")
-        for day in range(1, config.SIMULATION_DAYS + 1):
+        # Calculate training days
+        training_days = int(config.SIMULATION_DAYS * train_test_split)
+        test_days = config.SIMULATION_DAYS - training_days
+        
+        # PHASE 1: TRAINING - Generate data and train ML models
+        print(f"\n[PHASE 1] Training Phase: Days 1-{training_days}")
+        print("Generating training data and training ML models...")
+        environment.set_training_phase(True, training_days)
+        environment.identity_manager.set_training_phase(True)  # Enable training in identity manager
+        
+        for day in range(1, training_days + 1):
             if day % 5 == 0:
-                print(f"  Day {day}/{config.SIMULATION_DAYS}")
+                print(f"  Training Day {day}/{training_days}")
+            environment.simulate_day(day)
+            
+            # Train ML models periodically during training phase
+            if day % 7 == 0:  # Train weekly
+                self._train_ml_models(environment)
+        
+        # Final training on all training data
+        print("\nFinalizing ML model training on training data...")
+        self._train_ml_models(environment)
+        
+        # PHASE 2: TESTING - Evaluate on unseen data (no retraining)
+        print(f"\n[PHASE 2] Testing Phase: Days {training_days+1}-{config.SIMULATION_DAYS}")
+        print("Evaluating on test data (models frozen, no retraining)...")
+        environment.set_training_phase(False, training_days)
+        environment.identity_manager.set_training_phase(False)  # Disable training in identity manager
+        
+        for day in range(training_days + 1, config.SIMULATION_DAYS + 1):
+            if (day - training_days) % 5 == 0:
+                print(f"  Test Day {day - training_days}/{test_days}")
             environment.simulate_day(day)
         
         # Run breach simulations
@@ -424,4 +490,45 @@ which aligns with Zero Trust principles of "never trust, always verify."
         
         print(f"\n✓ Experiment report saved to: {self.results_dir}/experiment_report.txt")
         print(f"✓ Results saved to: {self.results_dir}/")
+    
+    def _train_ml_models(self, environment: HybridWorkEnvironment):
+        """
+        Train ML models on collected behavior data.
+        Only called during training phase to avoid circular logic.
+        """
+        if not environment.training_phase:
+            return  # Don't train during testing phase
+        
+        # Get authentication logs for training
+        auth_logs = environment.identity_manager.authentication_logs
+        
+        # Group by user and train behavioral models
+        user_behaviors = {}
+        for log in auth_logs:
+            user_id = log.get('user_id')
+            if not user_id:
+                continue
+            
+            if user_id not in user_behaviors:
+                user_behaviors[user_id] = []
+            
+            # Convert log to behavior format
+            behavior = {
+                'timestamp': log.get('timestamp', datetime.now()),
+                'hour': log['timestamp'].hour if isinstance(log['timestamp'], datetime) else datetime.now().hour,
+                'day_of_week': log['timestamp'].weekday() if isinstance(log['timestamp'], datetime) else datetime.now().weekday(),
+                'resource': log.get('context', {}).get('resource', ''),
+                'location': log.get('context', {}).get('location', ''),
+                'device_id': log.get('context', {}).get('device_id', ''),
+                'date': str(log['timestamp'].date()) if isinstance(log['timestamp'], datetime) else str(datetime.now().date()),
+                'success': log.get('success', True),
+                'failed_auth': not log.get('success', True)
+            }
+            user_behaviors[user_id].append(behavior)
+        
+        # Train models for each user
+        ai_detector = environment.identity_manager.ai_detector
+        for user_id, behaviors in user_behaviors.items():
+            if len(behaviors) >= 10:  # Need minimum data to train
+                ai_detector.train_on_user_behavior(user_id, behaviors)
 
