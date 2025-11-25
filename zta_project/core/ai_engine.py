@@ -2,129 +2,294 @@
 AI Engine for Zero Trust Architecture
 Implements machine learning models for behavioral analytics, anomaly detection,
 and threat prediction as described in the AI-Powered Zero-Trust Framework paper
+
+This module uses real ML algorithms (Isolation Forest, feature engineering) instead
+of simple rule-based approaches for scientific rigor.
 """
 
 import numpy as np
-from typing import Dict, List, Tuple
+import pandas as pd
+from typing import Dict, List, Tuple, Optional
 from datetime import datetime, timedelta
-from collections import deque
+from collections import deque, defaultdict
 import random
+import warnings
+warnings.filterwarnings('ignore')
+
+try:
+    from sklearn.ensemble import IsolationForest
+    from sklearn.preprocessing import StandardScaler, LabelEncoder
+    from sklearn.model_selection import train_test_split
+    SKLEARN_AVAILABLE = True
+except ImportError:
+    SKLEARN_AVAILABLE = False
+    print("Warning: scikit-learn not available. Install with: pip install scikit-learn")
 
 
 class BehavioralAnalyticsModel:
-    """ML model for analyzing user behavior patterns"""
+    """
+    Real ML-based model for analyzing user behavior patterns.
+    Uses Isolation Forest for anomaly detection and feature engineering
+    to extract meaningful behavioral patterns.
+    """
     
-    def __init__(self):
-        self.user_patterns = {}  # Store behavioral patterns per user
-        self.model_weights = {
-            'access_time': 0.25,
-            'access_frequency': 0.20,
-            'resource_pattern': 0.25,
-            'location_consistency': 0.15,
-            'device_preference': 0.15
-        }
-        self.training_data = {}
+    def __init__(self, contamination: float = 0.1, random_state: int = 42):
+        """
+        Initialize the ML-based behavioral analytics model.
         
-    def train_user_model(self, user_id: str, behavior_history: List[Dict]):
-        """Train a behavioral model for a specific user"""
+        Args:
+            contamination: Expected proportion of anomalies (0.0 to 0.5)
+            random_state: Random seed for reproducibility
+        """
+        if not SKLEARN_AVAILABLE:
+            raise ImportError("scikit-learn is required. Install with: pip install scikit-learn")
+        
+        self.user_models = {}  # Isolation Forest models per user
+        self.scalers = {}  # Feature scalers per user
+        self.label_encoders = {}  # Label encoders for categorical features
+        self.user_patterns = {}  # Statistical patterns for feature engineering
+        self.training_data = {}  # Store training data per user
+        self.is_trained = {}  # Track training status per user
+        
+        # Model hyperparameters
+        self.contamination = contamination
+        self.random_state = random_state
+        
+        # Feature names for consistency
+        self.feature_names = [
+            'hour_of_day', 'day_of_week', 'hour_sin', 'hour_cos',
+            'resource_frequency', 'location_frequency', 'device_frequency',
+            'access_rate', 'session_duration', 'time_since_last_access',
+            'unique_resources_today', 'unique_locations_today',
+            'failed_auth_ratio', 'location_change_count'
+        ]
+        
+    def _extract_features(self, behavior_history: List[Dict], current_behavior: Optional[Dict] = None) -> np.ndarray:
+        """
+        Extract ML features from behavior history.
+        Uses time-based, frequency-based, and sequence-based features.
+        """
         if not behavior_history:
-            return
+            return np.zeros(len(self.feature_names))
+        
+        # Convert to DataFrame for easier processing
+        df = pd.DataFrame(behavior_history)
+        
+        # Ensure timestamp column exists
+        if 'timestamp' not in df.columns:
+            if 'date' in df.columns:
+                df['timestamp'] = pd.to_datetime(df['date'], errors='coerce')
+            else:
+                df['timestamp'] = pd.Timestamp.now()
+        
+        # Extract time-based features
+        timestamps = pd.to_datetime(df['timestamp'], errors='coerce')
+        hours = timestamps.dt.hour.fillna(12)
+        days_of_week = timestamps.dt.dayofweek.fillna(0)
+        
+        # Cyclical encoding for time (captures periodicity)
+        hour_sin = np.sin(2 * np.pi * hours / 24)
+        hour_cos = np.cos(2 * np.pi * hours / 24)
+        
+        # Resource frequency (how often this resource is accessed)
+        resources = df.get('resource', pd.Series([''] * len(df)))
+        resource_counts = resources.value_counts()
+        resource_freq = resources.map(resource_counts).fillna(0) / len(resources) if len(resources) > 0 else 0
+        
+        # Location frequency
+        locations = df.get('location', pd.Series([''] * len(df)))
+        location_counts = locations.value_counts()
+        location_freq = locations.map(location_counts).fillna(0) / len(locations) if len(locations) > 0 else 0
+        
+        # Device frequency
+        devices = df.get('device_id', pd.Series([''] * len(df)))
+        device_counts = devices.value_counts()
+        device_freq = devices.map(device_counts).fillna(0) / len(devices) if len(devices) > 0 else 0
+        
+        # Access rate (events per hour)
+        if len(timestamps) > 1:
+            time_span = (timestamps.max() - timestamps.min()).total_seconds() / 3600.0
+            access_rate = len(timestamps) / max(time_span, 0.1)
+        else:
+            access_rate = 0
+        
+        # Session duration (if available)
+        session_durations = df.get('session_duration', pd.Series([0] * len(df)))
+        avg_session_duration = session_durations.mean() if len(session_durations) > 0 else 0
+        
+        # Time since last access
+        if len(timestamps) > 0:
+            last_access = timestamps.max()
+            time_since_last = (pd.Timestamp.now() - last_access).total_seconds() / 3600.0
+        else:
+            time_since_last = 24.0
+        
+        # Unique resources accessed today
+        today = pd.Timestamp.now().date()
+        today_resources = resources[timestamps.dt.date == today].nunique() if len(timestamps) > 0 else 0
+        
+        # Unique locations today
+        today_locations = locations[timestamps.dt.date == today].nunique() if len(timestamps) > 0 else 0
+        
+        # Failed authentication ratio
+        failed_auths = df.get('failed_auth', pd.Series([False] * len(df)))
+        failed_auth_ratio = failed_auths.sum() / len(failed_auths) if len(failed_auths) > 0 else 0
+        
+        # Location change count
+        location_changes = (locations != locations.shift()).sum() if len(locations) > 1 else 0
+        
+        # Aggregate features (use mean/median for time series)
+        features = np.array([
+            hours.mean() if len(hours) > 0 else 12,
+            days_of_week.mode()[0] if len(days_of_week) > 0 else 0,
+            hour_sin.mean() if len(hour_sin) > 0 else 0,
+            hour_cos.mean() if len(hour_cos) > 0 else 0,
+            resource_freq.mean() if len(resource_freq) > 0 else 0,
+            location_freq.mean() if len(location_freq) > 0 else 0,
+            device_freq.mean() if len(device_freq) > 0 else 0,
+            access_rate,
+            avg_session_duration,
+            time_since_last,
+            today_resources,
+            today_locations,
+            failed_auth_ratio,
+            location_changes
+        ])
+        
+        # If current behavior provided, incorporate it
+        if current_behavior:
+            current_hour = current_behavior.get('hour', datetime.now().hour)
+            current_day = current_behavior.get('day_of_week', datetime.now().weekday())
             
-        # Analyze patterns
-        access_times = [b.get('hour', 0) for b in behavior_history]
-        resources = [b.get('resource', '') for b in behavior_history]
-        locations = [b.get('location', '') for b in behavior_history]
+            # Update features with current behavior
+            features[0] = current_hour
+            features[1] = current_day
+            features[2] = np.sin(2 * np.pi * current_hour / 24)
+            features[3] = np.cos(2 * np.pi * current_hour / 24)
+            
+            # Update access rate if provided
+            if 'access_rate' in current_behavior:
+                features[7] = current_behavior['access_rate']
+            
+            # Update location changes
+            if 'location_changes' in current_behavior:
+                features[13] = current_behavior['location_changes']
         
-        pattern = {
-            'typical_hours': self._calculate_typical_hours(access_times),
-            'common_resources': self._get_common_resources(resources),
-            'typical_locations': self._get_common_locations(locations),
-            'avg_access_rate': len(behavior_history) / max(1, len(set([b.get('date', '') for b in behavior_history]))),
-            'device_preferences': self._analyze_device_usage(behavior_history)
-        }
+        return features.reshape(1, -1)
+    
+    def train_user_model(self, user_id: str, behavior_history: List[Dict], test_size: float = 0.2):
+        """
+        Train an Isolation Forest model for a specific user.
+        Uses proper train/test split to avoid circular logic.
         
-        self.user_patterns[user_id] = pattern
+        Args:
+            user_id: User identifier
+            behavior_history: List of behavior dictionaries
+            test_size: Proportion of data to use for testing (not used in training)
+        """
+        if not behavior_history or len(behavior_history) < 10:
+            # Not enough data to train
+            return
+        
+        # Store full history for pattern analysis
         self.training_data[user_id] = behavior_history
         
+        # Extract features from all behaviors
+        feature_matrix = []
+        for i, behavior in enumerate(behavior_history):
+            # Use history up to this point (no future data leakage)
+            history_up_to_point = behavior_history[:i+1]
+            features = self._extract_features(history_up_to_point)
+            feature_matrix.append(features.flatten())
+        
+        if len(feature_matrix) < 10:
+            return
+        
+        X = np.array(feature_matrix)
+        
+        # Train/test split to avoid circular logic
+        if len(X) > 20:
+            X_train, X_test = train_test_split(
+                X, test_size=test_size, random_state=self.random_state, shuffle=False
+            )
+        else:
+            X_train = X
+            X_test = np.array([]).reshape(0, X.shape[1])
+        
+        # Standardize features
+        scaler = StandardScaler()
+        X_train_scaled = scaler.fit_transform(X_train)
+        self.scalers[user_id] = scaler
+        
+        # Train Isolation Forest
+        model = IsolationForest(
+            contamination=self.contamination,
+            random_state=self.random_state,
+            n_estimators=100,
+            max_samples='auto'
+        )
+        model.fit(X_train_scaled)
+        self.user_models[user_id] = model
+        
+        # Store statistical patterns for feature engineering
+        self.user_patterns[user_id] = {
+            'mean_features': np.mean(X_train, axis=0),
+            'std_features': np.std(X_train, axis=0),
+            'feature_count': len(X_train)
+        }
+        
+        self.is_trained[user_id] = True
+        
     def predict_anomaly_score(self, user_id: str, current_behavior: Dict) -> float:
-        """Predict anomaly score using ML model"""
-        if user_id not in self.user_patterns:
-            # New user, moderate anomaly score
-            return 0.4
-            
-        pattern = self.user_patterns[user_id]
-        anomaly_factors = []
+        """
+        Predict anomaly score using trained ML model.
+        Returns score between 0 (normal) and 1 (highly anomalous).
+        """
+        if user_id not in self.user_models:
+            # New user or insufficient training data
+            return 0.5  # Neutral score for unknown users
         
-        # Time-based anomaly
-        current_hour = datetime.now().hour
-        typical_hours = pattern['typical_hours']
-        if not self._is_typical_hour(current_hour, typical_hours):
-            time_anomaly = 1.0 - (min(abs(current_hour - h) for h in typical_hours) / 24.0)
-            anomaly_factors.append(('access_time', time_anomaly * self.model_weights['access_time']))
+        if not self.is_trained.get(user_id, False):
+            return 0.5
         
-        # Resource pattern anomaly
-        current_resource = current_behavior.get('resource', '')
-        if current_resource not in pattern['common_resources'][:5]:  # Top 5 resources
-            anomaly_factors.append(('resource_pattern', self.model_weights['resource_pattern']))
+        # Get user's behavior history (training data)
+        behavior_history = self.training_data.get(user_id, [])
         
-        # Location anomaly
-        current_location = current_behavior.get('location', '')
-        if current_location not in pattern['typical_locations']:
-            anomaly_factors.append(('location_consistency', self.model_weights['location_consistency']))
+        # Extract features including current behavior
+        features = self._extract_features(behavior_history, current_behavior)
         
-        # Access rate anomaly
-        access_rate = current_behavior.get('access_rate', 0)
-        avg_rate = pattern['avg_access_rate']
-        if access_rate > avg_rate * 2:  # More than 2x normal rate
-            rate_anomaly = min(1.0, (access_rate - avg_rate) / avg_rate)
-            anomaly_factors.append(('access_frequency', rate_anomaly * self.model_weights['access_frequency']))
+        # Scale features
+        scaler = self.scalers[user_id]
+        features_scaled = scaler.transform(features)
         
-        # Calculate weighted anomaly score
-        total_score = sum(weight for _, weight in anomaly_factors)
-        return min(1.0, total_score)
+        # Predict with Isolation Forest
+        model = self.user_models[user_id]
+        prediction = model.predict(features_scaled)[0]  # -1 for anomaly, 1 for normal
+        anomaly_score_raw = model.score_samples(features_scaled)[0]  # Lower = more anomalous
+        
+        # Convert to 0-1 scale (normalize)
+        # Isolation Forest scores are negative for anomalies
+        # Normalize: score ranges roughly from -0.5 to 0.5
+        normalized_score = 1.0 / (1.0 + np.exp(anomaly_score_raw))  # Sigmoid normalization
+        
+        # If prediction is -1 (anomaly), ensure score reflects that
+        if prediction == -1:
+            normalized_score = max(normalized_score, 0.6)  # At least 0.6 if detected as anomaly
+        
+        return min(1.0, max(0.0, normalized_score))
     
-    def _calculate_typical_hours(self, hours: List[int]) -> List[int]:
-        """Calculate typical access hours using clustering"""
-        if not hours:
-            return list(range(9, 18))  # Default business hours
-            
-        # Simple clustering: find most common hour ranges
-        hour_counts = {}
-        for h in hours:
-            hour_counts[h] = hour_counts.get(h, 0) + 1
+    def get_model_statistics(self, user_id: str) -> Dict:
+        """Get statistics about the trained model for a user"""
+        if user_id not in self.user_models:
+            return {'trained': False}
         
-        # Get top 6 most common hours (typical work span)
-        typical = sorted(hour_counts.items(), key=lambda x: x[1], reverse=True)[:6]
-        return [h for h, _ in typical]
-    
-    def _get_common_resources(self, resources: List[str]) -> List[str]:
-        """Get commonly accessed resources"""
-        resource_counts = {}
-        for r in resources:
-            resource_counts[r] = resource_counts.get(r, 0) + 1
-        return sorted(resource_counts.items(), key=lambda x: x[1], reverse=True)[:10]
-    
-    def _get_common_locations(self, locations: List[str]) -> List[str]:
-        """Get typical access locations"""
-        return list(set(locations))
-    
-    def _analyze_device_usage(self, behavior_history: List[Dict]) -> Dict[str, float]:
-        """Analyze device usage patterns"""
-        device_usage = {}
-        total = len(behavior_history)
-        for b in behavior_history:
-            device = b.get('device_id', '')
-            device_usage[device] = device_usage.get(device, 0) + 1
-        
-        # Normalize to probabilities
-        return {d: count/total for d, count in device_usage.items()}
-    
-    def _is_typical_hour(self, hour: int, typical_hours: List[int]) -> bool:
-        """Check if hour is within typical range"""
-        if not typical_hours:
-            return 9 <= hour <= 17
-        # Allow 2-hour window
-        return any(abs(hour - th) <= 2 for th in typical_hours)
+        patterns = self.user_patterns.get(user_id, {})
+        return {
+            'trained': True,
+            'training_samples': patterns.get('feature_count', 0),
+            'model_type': 'IsolationForest',
+            'contamination': self.contamination
+        }
 
 
 class ThreatDetectionModel:

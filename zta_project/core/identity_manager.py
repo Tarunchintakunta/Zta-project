@@ -19,6 +19,7 @@ class IdentityManager:
         self.session_timeout = 30  # minutes
         self.enable_continuous_auth = True  # Enable continuous authentication by default
         self.ai_detector = AIAnomalyDetector()  # AI-powered anomaly detection
+        self.training_phase = True  # Track if we're in training phase (to avoid circular logic)
         
     def register_user(self, user: User):
         """Register a user in the identity system"""
@@ -156,26 +157,38 @@ class IdentityManager:
         return True
     
     def _calculate_anomaly_score(self, user: User, behavior_data: Dict) -> float:
-        """Calculate anomaly score using AI-powered behavioral analytics"""
+        """
+        Calculate anomaly score using AI-powered behavioral analytics.
+        Only trains models during training phase to avoid circular logic.
+        """
         # Use AI model for anomaly detection
         ai_result = self.ai_detector.detect_behavioral_anomaly(user.user_id, behavior_data)
         
-        # Train model if we have historical data
-        if user.user_id in self.users and len(self.authentication_logs) > 10:
+        # Only train model during training phase (not during testing/evaluation)
+        # This prevents circular logic where we generate and evaluate with same patterns
+        if self.training_phase and user.user_id in self.users and len(self.authentication_logs) > 10:
             # Extract behavior history from logs
             user_logs = [log for log in self.authentication_logs 
                         if log.get('user_id') == user.user_id and log.get('success')]
             if len(user_logs) > 5:
                 behavior_history = [{
+                    'timestamp': log['timestamp'] if isinstance(log['timestamp'], datetime) else datetime.now(),
                     'hour': log['timestamp'].hour if isinstance(log['timestamp'], datetime) else 12,
+                    'day_of_week': log['timestamp'].weekday() if isinstance(log['timestamp'], datetime) else datetime.now().weekday(),
                     'resource': log.get('context', {}).get('resource', ''),
                     'location': log.get('context', {}).get('location', ''),
                     'device_id': log.get('context', {}).get('device_id', ''),
-                    'date': str(log['timestamp'].date()) if isinstance(log['timestamp'], datetime) else ''
-                } for log in user_logs[-20:]]  # Last 20 successful logins
+                    'date': str(log['timestamp'].date()) if isinstance(log['timestamp'], datetime) else str(datetime.now().date()),
+                    'success': log.get('success', True),
+                    'failed_auth': not log.get('success', True)
+                } for log in user_logs[-50:]]  # Use more data for better training
                 self.ai_detector.train_on_user_behavior(user.user_id, behavior_history)
         
         return ai_result['anomaly_score']
+    
+    def set_training_phase(self, training: bool):
+        """Set whether we're in training phase (to control when models can be trained)"""
+        self.training_phase = training
     
     def _log_authentication(self, user_id: str, success: bool, reason: str, context: Dict):
         """Log authentication attempt"""
