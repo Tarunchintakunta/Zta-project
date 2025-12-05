@@ -1,11 +1,11 @@
 app_id,name,security_level,app_type,required_access_level,network_segment,is_cloud_based,data_classification,total_access_attempts
-APP-0001,Email System,low,cloud,1,general_segment_2,False,public,5
-APP-0002,File Share,medium,desktop,2,general_segment_2,False,internal,25
-APP-0003,CRM Platform,medium,web,2,general_segment_4,True,internal,12
-APP-0004,HR Portal,critical,web,4,secure_segment_2,False,confidential,5
-APP-0005,Financial System,medium,web,2,general_segment_5,True,internal,7
-APP-0006,Project Management,low,cloud,1,general_segment_1,True,public,5
-APP-0007,Code Repository,low,mobile,1,general_segment_4,False,public,3
-APP-0008,Customer Database,high,cloud,3,secure_segment_1,False,restricted,8
-APP-0009,Analytics Dashboard,low,cloud,1,general_segment_4,True,public,2
-APP-0010,Video Conferencing,high,desktop,3,secure_segment_2,False,restricted,5
+APP-0001,Email System,critical,web,4,secure_segment_1,True,confidential,6
+APP-0002,File Share,medium,desktop,2,general_segment_5,False,internal,34
+APP-0003,CRM Platform,critical,mobile,4,secure_segment_3,False,confidential,4
+APP-0004,HR Portal,low,web,1,general_segment_3,False,public,6
+APP-0005,Financial System,medium,mobile,2,general_segment_4,True,internal,10
+APP-0006,Project Management,critical,web,4,secure_segment_1,False,confidential,2
+APP-0007,Code Repository,medium,mobile,2,general_segment_2,True,internal,6
+APP-0008,Customer Database,critical,mobile,4,secure_segment_3,False,confidential,5
+APP-0009,Analytics Dashboard,high,desktop,3,secure_segment_3,True,restricted,16
+APP-0010,Video Conferencing,low,web,1,general_segment_5,False,public,10

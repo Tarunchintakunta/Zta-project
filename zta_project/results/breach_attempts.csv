@@ -1,26 +1,26 @@
 breach_type,timestamp,attacker_id,target,prevented,prevention_method,victim_id,attacker_device,insider_id,device_id
-lateral_movement,2025-12-05 12:34:53.851258,USER-0034,Video Conferencing,True,"['Micro-segmentation', 'Access control policies']",,,,
-credential_theft,2025-12-05 12:34:53.851266,,,True,"['MFA requirement', 'Device trust validation']",USER-0012,DEV-0070,,
-insider_threat,2025-12-05 12:34:53.851283,,HR Portal,True,"['Role-based access control', 'Least privilege principle']",,,USER-0043,
-device_compromise,2025-12-05 12:34:53.851302,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0075
-privilege_escalation,2025-12-05 12:34:53.851316,USER-0001,Video Conferencing,True,"['Access level enforcement', 'Continuous authorization']",,,,
-lateral_movement,2025-12-05 12:34:53.851336,USER-0015,Code Repository,False,[],,,,
-credential_theft,2025-12-05 12:34:53.851341,,,True,"['MFA requirement', 'Device trust validation']",USER-0001,DEV-0030,,
-insider_threat,2025-12-05 12:34:53.851354,,Video Conferencing,True,['Authentication failure'],,,USER-0020,
-device_compromise,2025-12-05 12:34:53.851360,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0063
-privilege_escalation,2025-12-05 12:34:53.851372,USER-0009,Video Conferencing,True,"['Access level enforcement', 'Continuous authorization']",,,,
-lateral_movement,2025-12-05 12:34:53.851390,USER-0017,Customer Database,True,"['Micro-segmentation', 'Access control policies']",,,,
-credential_theft,2025-12-05 12:34:53.851395,,,False,[],USER-0042,DEV-0061,,
-insider_threat,2025-12-05 12:34:53.851403,,Customer Database,True,"['Role-based access control', 'Least privilege principle']",,,USER-0010,
-device_compromise,2025-12-05 12:34:53.851418,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0056
-privilege_escalation,2025-12-05 12:34:53.851430,USER-0043,Video Conferencing,True,"['Access level enforcement', 'Continuous authorization']",,,,
-lateral_movement,2025-12-05 12:34:53.851446,USER-0020,Customer Database,True,"['Micro-segmentation', 'Access control policies']",,,,
-credential_theft,2025-12-05 12:34:53.851450,,,True,"['MFA requirement', 'Device trust validation']",USER-0007,DEV-0061,,
-insider_threat,2025-12-05 12:34:53.851461,,Video Conferencing,True,"['Role-based access control', 'Least privilege principle']",,,USER-0007,
-device_compromise,2025-12-05 12:34:53.851475,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0068
-privilege_escalation,2025-12-05 12:34:53.851481,USER-0022,Video Conferencing,True,"['Access level enforcement', 'Continuous authorization']",,,,
-lateral_movement,2025-12-05 12:34:53.851498,USER-0013,File Share,False,[],,,,
-credential_theft,2025-12-05 12:34:53.851502,,,True,"['MFA requirement', 'Device trust validation']",USER-0049,DEV-0057,,
-insider_threat,2025-12-05 12:34:53.851509,,Video Conferencing,True,"['Role-based access control', 'Least privilege principle']",,,USER-0034,
-device_compromise,2025-12-05 12:34:53.851524,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0033
-privilege_escalation,2025-12-05 12:34:53.851534,USER-0007,HR Portal,True,"['Access level enforcement', 'Continuous authorization']",,,,
+lateral_movement,2025-12-05 13:06:32.310705,USER-0008,Video Conferencing,False,[],,,,
+credential_theft,2025-12-05 13:06:32.310729,,,True,"['MFA requirement', 'Device trust validation']",USER-0010,DEV-0068,,
+insider_threat,2025-12-05 13:06:32.310819,,CRM Platform,True,"['Role-based access control', 'Least privilege principle']",,,USER-0015,
+device_compromise,2025-12-05 13:06:32.310876,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0049
+privilege_escalation,2025-12-05 13:06:32.310902,USER-0026,Analytics Dashboard,True,"['Access level enforcement', 'Continuous authorization']",,,,
+lateral_movement,2025-12-05 13:06:32.310950,USER-0016,Code Repository,False,[],,,,
+credential_theft,2025-12-05 13:06:32.310955,,,True,"['MFA requirement', 'Device trust validation']",USER-0038,DEV-0064,,
+insider_threat,2025-12-05 13:06:32.311072,,Customer Database,True,"['Role-based access control', 'Least privilege principle']",,,USER-0040,
+device_compromise,2025-12-05 13:06:32.311158,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0024
+privilege_escalation,2025-12-05 13:06:32.311216,USER-0004,Email System,True,"['Access level enforcement', 'Continuous authorization']",,,,
+lateral_movement,2025-12-05 13:06:32.311274,USER-0026,CRM Platform,True,"['Micro-segmentation', 'Access control policies']",,,,
+credential_theft,2025-12-05 13:06:32.311279,,,True,"['MFA requirement', 'Device trust validation']",USER-0011,DEV-0016,,
+insider_threat,2025-12-05 13:06:32.311342,,Email System,True,"['Role-based access control', 'Least privilege principle']",,,USER-0004,
+device_compromise,2025-12-05 13:06:32.311385,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0024
+privilege_escalation,2025-12-05 13:06:32.311392,USER-0033,Analytics Dashboard,True,"['Access level enforcement', 'Continuous authorization']",,,,
+lateral_movement,2025-12-05 13:06:32.311461,USER-0048,Customer Database,True,"['Micro-segmentation', 'Access control policies']",,,,
+credential_theft,2025-12-05 13:06:32.311466,,,True,"['MFA requirement', 'Device trust validation']",USER-0038,DEV-0004,,
+insider_threat,2025-12-05 13:06:32.311534,,CRM Platform,True,"['Role-based access control', 'Least privilege principle']",,,USER-0026,
+device_compromise,2025-12-05 13:06:32.311569,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0062
+privilege_escalation,2025-12-05 13:06:32.311604,USER-0026,Customer Database,True,"['Access level enforcement', 'Continuous authorization']",,,,
+lateral_movement,2025-12-05 13:06:32.311655,USER-0019,Video Conferencing,False,[],,,,
+credential_theft,2025-12-05 13:06:32.311668,,,False,[],USER-0027,DEV-0044,,
+insider_threat,2025-12-05 13:06:32.311696,,Customer Database,True,"['Role-based access control', 'Least privilege principle']",,,USER-0016,
+device_compromise,2025-12-05 13:06:32.311713,,,True,"['Device posture validation', 'Trust score enforcement']",,,,DEV-0030
+privilege_escalation,2025-12-05 13:06:32.311725,USER-0042,Project Management,True,"['Access level enforcement', 'Continuous authorization']",,,,

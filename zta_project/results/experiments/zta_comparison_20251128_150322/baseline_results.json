@@ -1,0 +1,105 @@
+{
+  "scenario": "baseline",
+  "timestamp": "2025-11-28T15:05:15.915213",
+  "security": {
+    "security_score": 50.55587376815818,
+    "breach_prevention_rate": 0.4,
+    "access_control_effectiveness": 0.05273972602739726,
+    "device_compliance_rate": 0.6666666666666666,
+    "authentication_success_rate": 0.9417206290471786,
+    "policy_violations": 1383,
+    "quarantined_devices": 23
+  },
+  "usability": {
+    "usability_score": 62.457666775914895,
+    "task_completion_rate": 0.32,
+    "average_task_time": 0.8148610293865204,
+    "user_satisfaction": 2.412781233009307,
+    "sus_score": 48.255624660186136,
+    "average_errors": 1.24
+  },
+  "breach_prevention": {
+    "total_attempts": 25,
+    "prevented": 10,
+    "successful": 15,
+    "prevention_rate": 0.4
+  },
+  "access_control": {
+    "total_access_requests": 1460,
+    "granted": 77,
+    "denied": 1383,
+    "grant_rate": 0.05273972602739726,
+    "denial_rate": 0.9472602739726027,
+    "top_denial_reasons": [
+      [
+        "Authentication method not sufficient (required: ['password']); User risk score too high (max: 50)",
+        367
+      ],
+      [
+        "Device validation failed: Device is not compliant",
+        318
+      ],
+      [
+        "Device validation failed: Device is quarantined",
+        201
+      ],
+      [
+        "User risk score too high (max: 50)",
+        171
+      ],
+      [
+        "Authentication method not sufficient (required: ['mfa', 'password']); User risk score too high (max: 50)",
+        117
+      ]
+    ],
+    "application_access_summary": {
+      "APP-0002": {
+        "granted": 14,
+        "denied": 461
+      },
+      "APP-0008": {
+        "granted": 0,
+        "denied": 64
+      },
+      "APP-0001": {
+        "granted": 8,
+        "denied": 98
+      },
+      "APP-0006": {
+        "granted": 2,
+        "denied": 35
+      },
+      "APP-0010": {
+        "granted": 4,
+        "denied": 76
+      },
+      "APP-0004": {
+        "granted": 7,
+        "denied": 34
+      },
+      "APP-0009": {
+        "granted": 33,
+        "denied": 418
+      },
+      "APP-0005": {
+        "granted": 3,
+        "denied": 66
+      },
+      "APP-0003": {
+        "granted": 2,
+        "denied": 70
+      },
+      "APP-0007": {
+        "granted": 4,
+        "denied": 61
+      }
+    }
+  },
+  "authentication": {
+    "total_attempts": 2162,
+    "successful": 2036,
+    "failed": 126,
+    "success_rate": 0.9417206290471786,
+    "active_sessions": 2036
+  }
+}
