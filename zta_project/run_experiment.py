@@ -25,7 +25,7 @@ def print_header():
     """Print experiment header"""
     print("\n" + "="*80)
     print("ZERO TRUST ARCHITECTURE COMPARATIVE EXPERIMENT")
-    print("="*80)
+
     print("Implementing Research Methodology:")
     print("Developing a Zero Trust Cybersecurity Framework for Malware Prevention")
     print("\nThis experiment compares:")
