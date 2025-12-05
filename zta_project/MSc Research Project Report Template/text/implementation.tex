@@ -37,67 +37,67 @@ This module is critical for the comparative evaluation. It contains the logic fo
 This script orchestrates the entire comparative study. It runs the simulation twice: first with ZTA controls disabled (Baseline) and then with them enabled (ZTA). It ensures a clean separation of training and testing data to avoid data leakage in the ML models.
 
 \subsection{Simulation Execution Log}
-The following screenshots demonstrate the step-by-step execution of the simulation framework, validating the functionality of each phase.
+The following screenshots provide a detailed trace of the simulation framework's execution, validating the functionality of each phase from initialization to final reporting.
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.9\textwidth]{phase1.png}
-    \caption{Phase 1: Environment Setup Initializing Users, Devices, and Applications}
+    \caption{Phase 1: Environment Setup. This phase initializes the hybrid work environment, creating synthetic users, registering devices, and configuring applications. It establishes the foundational data for the simulation.}
     \label{fig:phase1}
 \end{figure}
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.9\textwidth]{phase2.png}
-    \caption{Phase 2: Baseline Vulnerability Assessment}
+    \caption{Phase 2: Baseline Vulnerability Assessment. This phase simulates normal network operations under a traditional security model (without ZTA) to establish a baseline for comparison. It identifies initial vulnerabilities and logs standard access patterns.}
     \label{fig:phase2}
 \end{figure}
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.9\textwidth]{phase3.png}
-    \caption{Phase 3: Zero Trust Architecture Deployment}
+    \caption{Phase 3: Zero Trust Architecture Deployment. Here, the system activates ZTA policies. It demonstrates the enforcement of continuous authentication, device posture checks, and least-privilege access controls.}
     \label{fig:phase3}
 \end{figure}
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.9\textwidth]{phase4-1.png}
-    \caption{Phase 4: Security Breach Simulation - Initial Tests}
+    \caption{Phase 4: Security Breach Simulation (Initial). The system subjects the environment to various attack vectors, including credential theft and lateral movement. This screenshot shows the initial attempts and the system's defensive responses.}
     \label{fig:phase4-1}
 \end{figure}
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.9\textwidth]{phase4-2.png}
-    \caption{Phase 4: Security Breach Simulation - Ongoing Tests}
+    \caption{Phase 4: Security Breach Simulation (Ongoing). Continuing the stress test, the simulation executes complex scenarios like insider threats and privilege escalation. The logs confirm successful blocking of unauthorized access attempts.}
     \label{fig:phase4-2}
 \end{figure}
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.9\textwidth]{phase5.png}
-    \caption{Phase 5: Usability Testing Execution}
+    \caption{Phase 5: Usability Testing Execution. This phase evaluates the impact of ZTA on user experience. Automated agents simulate user tasks (e.g., login, file access) to measure friction, task completion rates, and system responsiveness.}
     \label{fig:phase5}
 \end{figure}
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.9\textwidth]{phase6.png}
-    \caption{Phase 6: Data Analysis and Metrics Calculation}
+    \caption{Phase 6: Data Analysis and Metrics Calculation. The system aggregates logs from all previous phases to calculate key performance indicators, including Security Scores, Breach Prevention Rates, and Usability Scores.}
     \label{fig:phase6}
 \end{figure}
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.9\textwidth]{phase8.png}
-    \caption{Phase 8: Comprehensive Report Generation}
+    \caption{Phase 8: Comprehensive Report Generation. The framework automatically compiles all analysis results, statistics, and charts into a comprehensive textual report and exports raw data to CSV files for further review.}
     \label{fig:phase8}
 \end{figure}
 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=0.9\textwidth]{phase9.png}
-    \caption{Phase 9: Final Research Summary and Key Findings}
+    \caption{Phase 9: Final Research Summary. The final output displays the executive summary of findings, highlighting the comparative improvement in security metrics and providing actionable recommendations.}
     \label{fig:phase9}
 \end{figure}
