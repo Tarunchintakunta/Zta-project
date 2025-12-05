@@ -113,6 +113,16 @@ def main():
         print_section("PHASE 4: SECURITY BREACH SIMULATION")
         print_info("Testing ZTA effectiveness against various attack scenarios...")
         
+        # KEY FIX: Explicitly enforce ZTA policies for the breach simulation phase
+        # The environment might still be in a mixed state from the "deployment" phase.
+        # We ensure strict mode is ON for the tests.
+        environment.access_controller.update_policy('require_mfa_for_critical', True)
+        environment.access_controller.update_policy('require_compliant_device', True)
+        environment.access_controller.update_policy('block_quarantined_devices', True)
+        environment.access_controller.update_policy('min_device_trust_score', 70)
+        environment.access_controller.update_policy('max_user_risk_score', 50)
+        print_info("  [SYSTEM] Enforcing strict Zero Trust policies for breach testing...")
+
         breach_simulator = BreachSimulator(environment)
         breach_simulator.run_all_breach_scenarios(iterations=5)
         
