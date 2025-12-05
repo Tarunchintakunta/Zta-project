@@ -1,0 +1,58 @@
+%% methodology.tex
+%%
+
+%% ==============================
+\section{Methodology}
+\label{sec:Methodology}
+%% ==============================
+
+This research employs a quantitative experimental approach to evaluate the effectiveness of the proposed AI-powered Zero Trust Architecture. A comprehensive simulation environment was developed to model a realistic hybrid workforce and conduct comparative experiments.
+
+\subsection{Simulation Environment}
+The simulation is built using Python and models a `HybridWorkEnvironment` consisting of:
+\begin{itemize}
+    \item \textbf{Users:} 50 simulated users with distinct roles (e.g., Employee, Manager, Admin) and behavior patterns.
+    \item \textbf{Devices:} 75 devices (Laptops, Mobiles) with varying security postures (OS version, Antivirus status).
+    \item \textbf{Applications:} 10 enterprise applications with different security classifications (Low, Medium, High, Critical).
+\end{itemize}
+The environment generates realistic traffic, including authentication events, resource access requests, and device posture checks.
+
+\subsection{Experimental Scenarios}
+Two distinct scenarios were executed to measure the impact of ZTA:
+
+\subsubsection{Baseline Scenario (Traditional Security)}
+The baseline scenario represents a traditional perimeter-based security model \citep{Cheswick2003}, where trust is implicitly granted once a user is inside the network. In this configuration:
+This scenario represents a traditional perimeter-based security model.
+\begin{itemize}
+    \item \textbf{Trust Model:} Implicit trust for internal users.
+    \item \textbf{Access Control:} Role-Based Access Control (RBAC) only.
+    \item \textbf{Device Compliance:} Minimal or no enforcement.
+    \item \textbf{AI Detection:} Disabled.
+\end{itemize}
+
+\subsubsection{ZTA Scenario (Zero Trust Architecture)}
+This scenario implements the full proposed framework.
+\begin{itemize}
+    \item \textbf{Trust Model:} "Never trust, always verify."
+    \item \textbf{Access Control:} Continuous verification, Micro-segmentation.
+    \item \textbf{Device Compliance:} Strict enforcement (Health checks required).
+    \item \textbf{AI Detection:} Active behavioral analytics using Isolation Forest.
+\end{itemize}
+
+\subsection{Breach Simulation}
+To test the resilience of each scenario, a `BreachSimulator` module injects specific attack vectors:
+\begin{enumerate}
+    \item \textbf{Lateral Movement:} An attacker attempts to move from a compromised low-value asset to a critical system.
+    \item \textbf{Credential Theft:} An attacker uses stolen valid credentials to access resources from an unknown device.
+    \item \textbf{Insider Threat:} A legitimate user attempts to access unauthorized sensitive data.
+    \item \textbf{Device Compromise:} A device with disabled security controls attempts to access the network.
+    \item \textbf{Privilege Escalation:} A standard user attempts to gain administrative privileges.
+\end{enumerate}
+
+\subsection{Evaluation Metrics}
+The performance of the framework is evaluated using the following metrics:
+\begin{itemize}
+    \item \textbf{Breach Prevention Rate:} The percentage of simulated attacks successfully blocked.
+    \item \textbf{Security Score:} A composite score (0-100) reflecting the overall security posture.
+    \item \textbf{Usability Score:} A measure (0-100) of user friction, calculated based on authentication challenges and access denials.
+\end{itemize}

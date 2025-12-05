@@ -1,0 +1,103 @@
+%% implementation.tex
+%%
+
+%% ==============================
+\section{Implementation}
+\label{sec:Implementation}
+%% ==============================
+
+The proposed framework was implemented as a comprehensive simulation using Python 3. The implementation focuses on modularity and extensibility, allowing for the simulation of complex hybrid work scenarios.
+
+\subsection{Technology Stack}
+The following technologies and libraries were used:
+\begin{itemize}
+    \item \textbf{Python 3.9+}: Core programming language.
+    \item \textbf{scikit-learn}: Used for implementing the Isolation Forest algorithm for anomaly detection.
+    \item \textbf{Faker}: Used to generate realistic synthetic data for users (names, emails) and devices.
+    \item \textbf{Pandas & NumPy}: Used for data manipulation and statistical analysis of simulation logs.
+    \item \textbf{Matplotlib & Seaborn}: Used for generating visualization charts for the evaluation.
+\end{itemize}
+
+\subsection{Core Modules}
+
+\subsubsection{AI Engine (`core/ai_engine.py`)}
+This module encapsulates the machine learning logic. The `BehavioralAnalyticsModel` class initializes the Isolation Forest model.
+\begin{verbatim}
+self.model = IsolationForest(
+    n_estimators=100,
+    contamination=0.1,
+    random_state=42
+)
+\end{verbatim}
+It includes methods for `train_user_model()` which fits the model on historical data, and `predict_anomaly_score()` which evaluates new events.
+
+\subsubsection{Breach Simulator (`simulation/breach_simulator.py`)}
+This module is critical for the comparative evaluation. It contains the logic for five distinct breach scenarios. For example, the `simulate_lateral_movement` function attempts to access a critical application from a compromised low-level account. In the ZTA implementation, this function checks for micro-segmentation policies before allowing the breach to succeed.
+
+This script orchestrates the entire comparative study. It runs the simulation twice: first with ZTA controls disabled (Baseline) and then with them enabled (ZTA). It ensures a clean separation of training and testing data to avoid data leakage in the ML models.
+
+\subsection{Simulation Execution Log}
+The following screenshots demonstrate the step-by-step execution of the simulation framework, validating the functionality of each phase.
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{phase1.png}
+    \caption{Phase 1: Environment Setup Initializing Users, Devices, and Applications}
+    \label{fig:phase1}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{phase2.png}
+    \caption{Phase 2: Baseline Vulnerability Assessment}
+    \label{fig:phase2}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{phase3.png}
+    \caption{Phase 3: Zero Trust Architecture Deployment}
+    \label{fig:phase3}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{phase4-1.png}
+    \caption{Phase 4: Security Breach Simulation - Initial Tests}
+    \label{fig:phase4-1}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{phase4-2.png}
+    \caption{Phase 4: Security Breach Simulation - Ongoing Tests}
+    \label{fig:phase4-2}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{phase5.png}
+    \caption{Phase 5: Usability Testing Execution}
+    \label{fig:phase5}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{phase6.png}
+    \caption{Phase 6: Data Analysis and Metrics Calculation}
+    \label{fig:phase6}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{phase8.png}
+    \caption{Phase 8: Comprehensive Report Generation}
+    \label{fig:phase8}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{phase9.png}
+    \caption{Phase 9: Final Research Summary and Key Findings}
+    \label{fig:phase9}
+\end{figure}

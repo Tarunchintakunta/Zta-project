@@ -1,0 +1,32 @@
+%% introduction.tex
+%%
+
+%% ==============================
+\section{Introduction}
+\label{sec:Introduction}
+%% ==============================
+
+The modern cybersecurity landscape has undergone a paradigm shift. The traditional network perimeter, once the cornerstone of enterprise security, has dissolved with the advent of cloud computing, mobile devices, and the widespread adoption of hybrid work models. Organizations no longer have a single "inside" to protect; instead, users, devices, and applications are distributed across the globe, accessing resources from untrusted networks. In this environment, the traditional "castle-and-moat" security model, which assumes implicit trust for anyone inside the network, is fundamentally flawed. Once an attacker breaches the perimeter, they are often free to move laterally, escalating privileges and exfiltrating sensitive data without detection.
+
+Zero Trust Architecture (ZTA) has emerged as the definitive solution to these challenges. Grounded in the principle of "never trust, always verify," ZTA assumes that no entity---whether inside or outside the network---should be trusted by default. Every access request must be fully authenticated, authorized, and encrypted before granting access. Furthermore, the integration of Artificial Intelligence (AI) and Machine Learning (ML) into ZTA enables real-time threat detection and adaptive policy enforcement, allowing security systems to respond to anomalies at machine speed.
+
+This research focuses on developing and evaluating an AI-powered ZTA framework specifically designed for malware prevention in hybrid work environments. By leveraging behavioral analytics and continuous monitoring, the framework aims to detect and block threats that bypass traditional defenses.
+
+\subsection{Research Question}
+The primary research question addressed in this study is:
+\textit{"How effective is an AI-powered Zero Trust Architecture in preventing malware and lateral movement compared to traditional perimeter-based security in a hybrid work environment?"}
+
+\subsection{Research Objectives}
+To answer this question, the following objectives have been established:
+\begin{itemize}
+    \item \textbf{Objective 1:} To design a Zero Trust Architecture framework that integrates Identity and Access Management (IAM), micro-segmentation, and device trust verification.
+    \item \textbf{Objective 2:} To implement an AI-driven anomaly detection engine using the Isolation Forest algorithm to identify malicious behavior patterns.
+    \item \textbf{Objective 3:} To develop a simulation environment that models a realistic hybrid workforce, including users, devices, and applications.
+    \item \textbf{Objective 4:} To conduct a comparative analysis between the proposed ZTA framework and a traditional baseline security model, measuring metrics such as breach prevention rate, security score, and usability impact.
+\end{itemize}
+
+\subsection{Contribution}
+This research contributes to the field of cybersecurity by providing a quantifiable evaluation of ZTA effectiveness. Unlike theoretical models, this study implements a functional simulation to generate empirical data on breach prevention. It demonstrates how AI can enhance ZTA by reducing false positives and detecting novel attacks that rule-based systems might miss.
+
+\subsection{Report Structure}
+The remainder of this report is organized as follows: Section~\ref{sec:rw} reviews related work in Zero Trust and AI-driven security. Section~\ref{sec:Methodology} details the research methodology and simulation setup. Section~\ref{sec:Design} presents the design specification of the proposed framework. Section~\ref{sec:Implementation} describes the implementation details. Section~\ref{sec:Evaluation} presents the experimental results and analysis. Finally, Section~\ref{sec:Conclusion} concludes the report and outlines future work.

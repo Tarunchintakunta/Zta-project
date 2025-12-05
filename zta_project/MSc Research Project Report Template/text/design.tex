@@ -1,0 +1,49 @@
+%% design.tex
+%%
+
+%% ==============================
+\section{Design Specification}
+\label{sec:Design}
+%% ==============================
+
+The proposed Zero Trust Architecture framework is designed to eliminate implicit trust and enforce continuous verification. The architecture consists of four primary components: the Identity Manager, Device Manager, Access Controller, and the AI Engine.
+
+\subsection{System Architecture}
+The high-level architecture is illustrated in Figure~\ref{fig:sys_arch}. It follows the NIST SP 800-207 logical components, separating the Control Plane (Policy Decision Point) from the Data Plane (Policy Enforcement Point).
+
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[width = 0.8\textwidth]{system_architecture.png}
+% \textbf{[PLACEHOLDER: Upload system_architecture.png to Overleaf]}
+\caption{Proposed AI-Powered Zero Trust Architecture}
+\label{fig:sys_arch}
+\end{center}
+\end{figure} 
+
+\subsection{Component Description}
+
+\subsubsection{Identity Manager}
+The Identity Manager is responsible for authenticating users. It supports multiple authentication methods, including passwords, Multi-Factor Authentication (MFA), and biometrics. In the ZTA model, it enforces continuous authentication, requiring re-verification based on session duration and risk score.
+
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{authentication.png}
+\caption{Zero Trust Authentication Process Analysis}
+\label{fig:auth_analysis}
+\end{center}
+\end{figure}
+
+\subsubsection{Device Manager}
+The Device Manager assesses the security posture of every device attempting to access the network. It checks compliance attributes such as:
+\begin{itemize}
+    \item OS Version (Must be up-to-date)
+    \item Antivirus Status (Must be active)
+    \item Disk Encryption (Must be enabled)
+\end{itemize}
+Devices that fail these checks are assigned a low Trust Score and may be quarantined.
+
+\subsubsection{Access Controller (Policy Decision Point)}
+The Access Controller is the core decision-making engine. It receives access requests and evaluates them against dynamic policies. It considers inputs from the Identity Manager (User Risk), Device Manager (Device Trust), and AI Engine (Anomaly Score) to grant or deny access. It enforces micro-segmentation by strictly limiting access to only the resources required for the user's role.
+
+\subsubsection{AI Engine}
+The AI Engine provides advanced threat detection capabilities. It utilizes the Isolation Forest algorithm to analyze user behavior in real-time. By learning "normal" patterns (login times, locations, resource usage), it generates an Anomaly Score for every action. High anomaly scores trigger stepped-up authentication or immediate blocking, even if the user has valid credentials.

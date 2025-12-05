@@ -1,0 +1,98 @@
+%% evaluation.tex
+%%
+
+%% ==================
+\section{Evaluation}
+\label{sec:Evaluation}
+%% ==================
+
+This section presents the results of the comparative experiment between the Baseline (Traditional Security) and the proposed Zero Trust Architecture (ZTA). The evaluation focuses on three key dimensions: Breach Prevention, Security Metrics, and Usability Impact.
+
+%% ===============================
+\subsection{Breach Prevention Analysis}
+\label{sec:evalOne}
+%% ===============================
+
+The primary objective of this research was to measure the effectiveness of ZTA in preventing cyberattacks. Figure~\ref{fig:breach_analysis} illustrates the comparison of breach outcomes.
+
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[width = 0.9\textwidth]{breach_analysis.png}
+\caption{Breach Prevention Analysis: Baseline vs ZTA}
+\label{fig:breach_analysis}
+\end{center}
+\end{figure} 
+
+The results show a significant improvement:
+\begin{itemize}
+    \item \textbf{Baseline Scenario:} The traditional model prevented only 40.0\% of attacks. It failed to stop lateral movement and credential theft because it lacked internal segmentation and continuous verification.
+    \item \textbf{ZTA Scenario:} The Zero Trust model prevented 84.0\% of attacks. The combination of micro-segmentation and AI anomaly detection successfully blocked lateral movement and identified compromised accounts even with valid credentials.
+\end{itemize}
+This represents a \textbf{44.0\% net improvement} in breach prevention.
+
+%% ===============================
+\subsection{Security Metrics}
+\label{sec:evalTwo}
+%% ===============================
+
+Beyond breach prevention, the overall security posture was evaluated. Figure~\ref{fig:security_metrics} shows the improvement in key security indicators.
+
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[width = 0.9\textwidth]{security_metrics.png}
+\caption{Security Metrics Comparison}
+\label{fig:security_metrics}
+\end{center}
+\end{figure} 
+
+The ZTA framework improved the overall Security Score by 19.1 points. Device Compliance also saw a 14.7\% improvement, as the strict device policies forced non-compliant devices to update or be quarantined (see Figure~\ref{fig:device_trust}).
+
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[width = 0.8\textwidth]{device_trust.png}
+\caption{Device Trust Distribution}
+\label{fig:device_trust}
+\end{center}
+\end{figure} 
+
+%% ===============================
+\subsection{Usability Impact}
+\label{sec:evalThree}
+%% ===============================
+
+A common concern with Zero Trust is the potential negative impact on user experience. Figure~\ref{fig:usability_metrics} presents the usability analysis.
+
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[width = 0.9\textwidth]{usability_metrics.png}
+\caption{Usability Metrics Analysis}
+\label{fig:usability_metrics}
+\end{center}
+\end{figure} 
+
+While the ZTA scenario did introduce more authentication challenges (MFA prompts), the overall Usability Score remained comparable to the baseline. The intelligent AI engine helped minimize friction by only challenging high-risk actions, ensuring that legitimate users were not overwhelmed.
+
+%% ===============================
+\subsection{Discussion}
+\label{sec:discussion}
+%% ===============================
+
+The comparative analysis (Figure~\ref{fig:comparative}) confirms the hypothesis that AI-powered ZTA significantly enhances security without a prohibitive cost to usability.
+
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[width = 0.9\textwidth]{comparative_analysis.png}
+\caption{Overall Comparative Analysis}
+\label{fig:comparative}
+\end{center}
+\end{figure} 
+
+The executive dashboard (Figure~\ref{fig:dashboard}) provides a holistic view of the system's performance, highlighting the critical role of AI in detecting the 16\% of attacks that might have otherwise succeeded.
+
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[width = 1.0\textwidth]{executive_dashboard.png}
+\caption{Executive Dashboard Summary}
+\label{fig:dashboard}
+\end{center}
+\end{figure} 
