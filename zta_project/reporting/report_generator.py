@@ -40,11 +40,11 @@ class ReportGenerator:
         report_lines.append(f"simulated hybrid work environment with {len(environment.users)} users,")
         report_lines.append(f"{len(environment.devices)} devices, and {len(environment.applications)} applications.")
         report_lines.append(f"\nKey Findings:")
-        report_lines.append(f"  • Overall Security Score: {security_analysis['security_score']:.1f}/100")
-        report_lines.append(f"  • Breach Prevention Rate: {security_analysis['breach_prevention_rate']*100:.1f}%")
-        report_lines.append(f"  • Overall Usability Score: {usability_analysis['usability_score']:.1f}/100")
-        report_lines.append(f"  • User Satisfaction: {usability_analysis['user_satisfaction']:.2f}/5.0")
-        report_lines.append(f"  • Task Completion Rate: {usability_analysis['task_completion_rate']*100:.1f}%")
+        report_lines.append(f"  - Overall Security Score: {security_analysis['security_score']:.1f}/100")
+        report_lines.append(f"  - Breach Prevention Rate: {security_analysis['breach_prevention_rate']*100:.1f}%")
+        report_lines.append(f"  - Overall Usability Score: {usability_analysis['usability_score']:.1f}/100")
+        report_lines.append(f"  - User Satisfaction: {usability_analysis['user_satisfaction']:.2f}/5.0")
+        report_lines.append(f"  - Task Completion Rate: {usability_analysis['task_completion_rate']*100:.1f}%")
         
         # Environment Overview
         report_lines.append("\n\n" + "=" * 80)
@@ -270,10 +270,10 @@ class ReportGenerator:
         
         report_lines.append(f"\nThis research successfully demonstrated the effectiveness of Zero Trust")
         report_lines.append(f"Architecture in securing hybrid work environments. The implementation achieved:")
-        report_lines.append(f"\n• High security effectiveness with {security_analysis['breach_prevention_rate']*100:.1f}% breach prevention")
-        report_lines.append(f"• Strong device compliance at {security_analysis['device_compliance_rate']*100:.1f}%")
-        report_lines.append(f"• Acceptable usability with {usability_analysis['sus_score']:.1f}/100 SUS score")
-        report_lines.append(f"• Positive user satisfaction at {usability_analysis['user_satisfaction']:.2f}/5.0")
+        report_lines.append(f"\n- High security effectiveness with {security_analysis['breach_prevention_rate']*100:.1f}% breach prevention")
+        report_lines.append(f"- Strong device compliance at {security_analysis['device_compliance_rate']*100:.1f}%")
+        report_lines.append(f"- Acceptable usability with {usability_analysis['sus_score']:.1f}/100 SUS score")
+        report_lines.append(f"- Positive user satisfaction at {usability_analysis['user_satisfaction']:.2f}/5.0")
         
         report_lines.append(f"\nThe results indicate that ZTA provides significant security improvements")
         report_lines.append(f"over traditional perimeter-based security models while maintaining reasonable")
@@ -281,10 +281,10 @@ class ReportGenerator:
         report_lines.append(f"can be effectively balanced through proper policy configuration and user training.")
         
         report_lines.append(f"\nFuture work should focus on:")
-        report_lines.append(f"• Long-term deployment studies in real organizational environments")
-        report_lines.append(f"• Advanced machine learning for anomaly detection")
-        report_lines.append(f"• Integration with emerging authentication technologies")
-        report_lines.append(f"• Scalability testing for larger enterprise deployments")
+        report_lines.append(f"- Long-term deployment studies in real organizational environments")
+        report_lines.append(f"- Advanced machine learning for anomaly detection")
+        report_lines.append(f"- Integration with emerging authentication technologies")
+        report_lines.append(f"- Scalability testing for larger enterprise deployments")
         
         report_lines.append("\n" + "=" * 80)
         report_lines.append("END OF REPORT")

@@ -46,11 +46,11 @@ class BreachSimulator:
             result['prevention_method'].append('Micro-segmentation')
             result['prevention_method'].append('Access control policies')
             self.prevented_breaches.append(result)
-            print(f"  ✓ PREVENTED: Micro-segmentation blocked lateral movement to {target_app.name}")
+            print(f"  [PREVENTED] Micro-segmentation blocked lateral movement to {target_app.name}")
         else:
             result['prevented'] = False
             self.successful_breaches.append(result)
-            print(f"  ✗ BREACH: Lateral movement succeeded to {target_app.name}")
+            print(f"  [BREACH] Lateral movement succeeded to {target_app.name}")
         
         self.breach_attempts.append(result)
         return result
@@ -90,11 +90,11 @@ class BreachSimulator:
             result['prevention_method'].append('MFA requirement')
             result['prevention_method'].append('Device trust validation')
             self.prevented_breaches.append(result)
-            print(f"  ✓ PREVENTED: MFA and device validation blocked credential theft")
+            print(f"  [PREVENTED] MFA and device validation blocked credential theft")
         else:
             result['prevented'] = False
             self.successful_breaches.append(result)
-            print(f"  ✗ BREACH: Credential theft succeeded")
+            print(f"  [BREACH] Credential theft succeeded")
         
         self.breach_attempts.append(result)
         return result
@@ -148,15 +148,15 @@ class BreachSimulator:
                 result['prevention_method'].append('Role-based access control')
                 result['prevention_method'].append('Least privilege principle')
                 self.prevented_breaches.append(result)
-                print(f"  ✓ PREVENTED: RBAC blocked insider access to {sensitive_app.name}")
+                print(f"  [PREVENTED] RBAC blocked insider access to {sensitive_app.name}")
             else:
                 result['prevented'] = False
                 self.successful_breaches.append(result)
-                print(f"  ✗ BREACH: Insider accessed {sensitive_app.name}")
+                print(f"  [BREACH] Insider accessed {sensitive_app.name}")
         else:
             result['prevention_method'].append('Authentication failure')
             self.prevented_breaches.append(result)
-            print(f"  ✓ PREVENTED: Authentication failed for insider")
+            print(f"  [PREVENTED] Authentication failed for insider")
         
         self.breach_attempts.append(result)
         return result
@@ -195,15 +195,15 @@ class BreachSimulator:
                 result['prevention_method'].append('Device posture validation')
                 result['prevention_method'].append('Trust score enforcement')
                 self.prevented_breaches.append(result)
-                print(f"  ✓ PREVENTED: Device posture check blocked compromised device")
+                print(f"  [PREVENTED] Device posture check blocked compromised device")
             else:
                 result['prevented'] = False
                 self.successful_breaches.append(result)
-                print(f"  ✗ BREACH: Compromised device gained access (Compliance check disabled)")
+                print(f"  [BREACH] Compromised device gained access (Compliance check disabled)")
         else:
             result['prevented'] = False
             self.successful_breaches.append(result)
-            print(f"  ✗ BREACH: Compromised device gained access")
+            print(f"  [BREACH] Compromised device gained access")
         
         self.breach_attempts.append(result)
         return result
@@ -257,11 +257,11 @@ class BreachSimulator:
                 result['prevention_method'].append('Access level enforcement')
                 result['prevention_method'].append('Continuous authorization')
                 self.prevented_breaches.append(result)
-                print(f"  ✓ PREVENTED: Access control blocked privilege escalation")
+                print(f"  [PREVENTED] Access control blocked privilege escalation")
             else:
                 result['prevented'] = False
                 self.successful_breaches.append(result)
-                print(f"  ✗ BREACH: Privilege escalation succeeded")
+                print(f"  [BREACH] Privilege escalation succeeded")
         else:
             result['prevention_method'].append('Authentication failure')
             self.prevented_breaches.append(result)
