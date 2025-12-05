@@ -35,7 +35,14 @@ class BreachSimulator:
         }
         
         # ZTA should prevent this through micro-segmentation
-        if target_app.security_level in ['high', 'critical']:
+        # CHECK: Is micro-segmentation actually enabled?
+        # In baseline, this policy might be disabled.
+        micro_segmentation_enabled = self.environment.access_controller.policies.get('require_mfa_for_critical', False)
+        # Note: We use 'require_mfa_for_critical' as a proxy for strict ZTA policies if a specific 'micro_segmentation' flag isn't available,
+        # or we can check if the environment is in ZTA mode.
+        # Better approach: Check if access would be granted under current policies.
+        
+        if target_app.security_level in ['high', 'critical'] and micro_segmentation_enabled:
             result['prevention_method'].append('Micro-segmentation')
             result['prevention_method'].append('Access control policies')
             self.prevented_breaches.append(result)
@@ -76,7 +83,10 @@ class BreachSimulator:
             attacker_device.device_id
         )
         
-        if not device_validation['valid'] or victim.authentication_method in ['mfa', 'biometric']:
+        # Check if device compliance is actually enforced
+        require_compliant_device = self.environment.access_controller.policies.get('require_compliant_device', False)
+        
+        if require_compliant_device and (not device_validation['valid'] or victim.authentication_method in ['mfa', 'biometric']):
             result['prevention_method'].append('MFA requirement')
             result['prevention_method'].append('Device trust validation')
             self.prevented_breaches.append(result)
@@ -177,10 +187,19 @@ class BreachSimulator:
         )
         
         if not posture_result['compliant'] or posture_result['trust_score'] < 50:
-            result['prevention_method'].append('Device posture validation')
-            result['prevention_method'].append('Trust score enforcement')
-            self.prevented_breaches.append(result)
-            print(f"  ✓ PREVENTED: Device posture check blocked compromised device")
+            # Check if these checks are actually enforced
+            require_compliant = self.environment.access_controller.policies.get('require_compliant_device', False)
+            min_trust = self.environment.access_controller.policies.get('min_device_trust_score', 0)
+            
+            if require_compliant and min_trust > 0:
+                result['prevention_method'].append('Device posture validation')
+                result['prevention_method'].append('Trust score enforcement')
+                self.prevented_breaches.append(result)
+                print(f"  ✓ PREVENTED: Device posture check blocked compromised device")
+            else:
+                result['prevented'] = False
+                self.successful_breaches.append(result)
+                print(f"  ✗ BREACH: Compromised device gained access (Compliance check disabled)")
         else:
             result['prevented'] = False
             self.successful_breaches.append(result)
