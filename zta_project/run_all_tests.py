@@ -22,7 +22,7 @@ def test_result(test_name, passed, message=""):
     total_tests += 1
     if passed:
         passed_tests += 1
-    status = "✓ PASS" if passed else "✗ FAIL"
+    status = "[PASS]" if passed else "[FAIL]"
     test_results.append((test_name, passed, message))
     print(f"{status}: {test_name}")
     if message:
@@ -424,16 +424,16 @@ def main():
     print("\nDetailed Results:")
     print("-" * 70)
     for test_name, passed, message in test_results:
-        status = "✓" if passed else "✗"
+        status = "[PASS]" if passed else "[FAIL]"
         print(f"{status} {test_name}")
         if message and not passed:
             print(f"    Error: {message}")
     
     print("\n" + "="*70)
     if passed_tests == total_tests:
-        print("🎉 ALL TESTS PASSED! Everything is working correctly.")
+        print("[SUCCESS] ALL TESTS PASSED! Everything is working correctly.")
     else:
-        print(f"⚠ {total_tests - passed_tests} test(s) failed. Check errors above.")
+        print(f"[WARNING] {total_tests - passed_tests} test(s) failed. Check errors above.")
     print("="*70 + "\n")
     
     return passed_tests == total_tests
@@ -441,4 +441,3 @@ def main():
 if __name__ == "__main__":
     success = main()
     sys.exit(0 if success else 1)
-

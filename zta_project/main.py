@@ -14,10 +14,6 @@ Date: 2024
 import sys
 import os
 from datetime import datetime
-from colorama import init, Fore, Style
-
-# Initialize colorama for colored output
-init(autoreset=True)
 
 # Add project root to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -31,44 +27,40 @@ import config
 
 def print_header():
     """Print project header"""
-    print(Fore.CYAN + Style.BRIGHT + """
-╔══════════════════════════════════════════════════════════════════════════════╗
-║                                                                              ║
-║              ZERO TRUST ARCHITECTURE RESEARCH PROJECT                        ║
-║         Effectiveness in Securing Hybrid Work Environments                   ║
-║                                                                              ║
-║  This research evaluates ZTA implementation through:                         ║
-║    • Identity Verification & Access Management                               ║
-║    • Device Posture Assessment & Compliance                                  ║
-║    • Micro-segmentation & Policy Enforcement                                 ║
-║    • Continuous Monitoring & Threat Detection                                ║
-║    • Security Breach Simulation & Prevention                                 ║
-║    • Usability Testing & User Experience Evaluation                          ║
-║                                                                              ║
-╚══════════════════════════════════════════════════════════════════════════════╝
-    """)
+    print("\n" + "="*80)
+    print("ZERO TRUST ARCHITECTURE RESEARCH PROJECT")
+    print("Effectiveness in Securing Hybrid Work Environments")
+    print("="*80)
+    print("This research evaluates ZTA implementation through:")
+    print("  - Identity Verification & Access Management")
+    print("  - Device Posture Assessment & Compliance")
+    print("  - Micro-segmentation & Policy Enforcement")
+    print("  - Continuous Monitoring & Threat Detection")
+    print("  - Security Breach Simulation & Prevention")
+    print("  - Usability Testing & User Experience Evaluation")
+    print("="*80 + "\n")
 
 
 def print_section(title):
     """Print section header"""
-    print(f"\n{Fore.YELLOW}{Style.BRIGHT}{'='*80}")
-    print(f"{Fore.YELLOW}{Style.BRIGHT}{title.center(80)}")
-    print(f"{Fore.YELLOW}{Style.BRIGHT}{'='*80}\n")
+    print(f"\n{'='*80}")
+    print(f"{title.center(80)}")
+    print(f"{'='*80}\n")
 
 
 def print_success(message):
     """Print success message"""
-    print(f"{Fore.GREEN}✓ {message}")
+    print(f"[SUCCESS] {message}")
 
 
 def print_info(message):
     """Print info message"""
-    print(f"{Fore.CYAN}ℹ {message}")
+    print(f"[INFO] {message}")
 
 
 def print_warning(message):
     """Print warning message"""
-    print(f"{Fore.YELLOW}⚠ {message}")
+    print(f"[WARNING] {message}")
 
 
 def main():
@@ -90,9 +82,9 @@ def main():
         environment.setup_environment()
         
         print_success("Environment setup completed successfully!")
-        print_info(f"  • Users created: {len(environment.users)}")
-        print_info(f"  • Devices registered: {len(environment.devices)}")
-        print_info(f"  • Applications configured: {len(environment.applications)}")
+        print_info(f"  - Users created: {len(environment.users)}")
+        print_info(f"  - Devices registered: {len(environment.devices)}")
+        print_info(f"  - Applications configured: {len(environment.applications)}")
         
         # Phase 2: Baseline Assessment
         print_section("PHASE 2: BASELINE VULNERABILITY ASSESSMENT")
@@ -209,31 +201,30 @@ def main():
         # Phase 9: Summary and Recommendations
         print_section("PHASE 9: RESEARCH SUMMARY")
         
-        print(f"\n{Fore.GREEN}{Style.BRIGHT}KEY FINDINGS:")
-        print(f"{Fore.WHITE}{'─'*80}")
-        print(f"\n{Fore.CYAN}Security Effectiveness:")
-        print(f"  • Overall Security Score: {Fore.GREEN}{security_results['security_score']:.1f}/100")
-        print(f"  • Breach Prevention Rate: {Fore.GREEN}{security_results['breach_prevention_rate']*100:.1f}%")
-        print(f"  • Device Compliance Rate: {Fore.GREEN}{security_results['device_compliance_rate']*100:.1f}%")
-        print(f"  • Authentication Success: {Fore.GREEN}{security_results['authentication_success_rate']*100:.1f}%")
+        print("\nKEY FINDINGS:")
+        print(f"{'─'*80}")
+        print("\nSecurity Effectiveness:")
+        print(f"  - Overall Security Score: {security_results['security_score']:.1f}/100")
+        print(f"  - Breach Prevention Rate: {security_results['breach_prevention_rate']*100:.1f}%")
+        print(f"  - Device Compliance Rate: {security_results['device_compliance_rate']*100:.1f}%")
+        print(f"  - Authentication Success: {security_results['authentication_success_rate']*100:.1f}%")
         
-        print(f"\n{Fore.CYAN}Usability & User Experience:")
-        print(f"  • Overall Usability Score: {Fore.GREEN}{usability_results['usability_score']:.1f}/100")
-        print(f"  • Task Completion Rate: {Fore.GREEN}{usability_results['task_completion_rate']*100:.1f}%")
-        print(f"  • User Satisfaction: {Fore.GREEN}{usability_results['user_satisfaction']:.2f}/5.0")
-        print(f"  • SUS Score: {Fore.GREEN}{usability_results['sus_score']:.1f}/100")
+        print("\nUsability & User Experience:")
+        print(f"  - Overall Usability Score: {usability_results['usability_score']:.1f}/100")
+        print(f"  - Task Completion Rate: {usability_results['task_completion_rate']*100:.1f}%")
+        print(f"  - User Satisfaction: {usability_results['user_satisfaction']:.2f}/5.0")
+        print(f"  - SUS Score: {usability_results['sus_score']:.1f}/100")
         
-        print(f"\n{Fore.CYAN}Comparative Analysis:")
+        print("\nComparative Analysis:")
         for metric, data in list(comparison_results['improvements'].items())[:3]:
             improvement = data['improvement_percent']
-            color = Fore.GREEN if improvement > 0 else Fore.RED
-            print(f"  • {metric.replace('_', ' ').title()}: {color}{improvement:+.1f}% vs Traditional")
+            print(f"  - {metric.replace('_', ' ').title()}: {improvement:+.1f}% vs Traditional")
         
-        print(f"\n{Fore.YELLOW}{Style.BRIGHT}RECOMMENDATIONS:")
-        print(f"{Fore.WHITE}{'─'*80}")
+        print("\nRECOMMENDATIONS:")
+        print(f"{'─'*80}")
         recommendations = analyzer.generate_recommendations()
         for i, rec in enumerate(recommendations[:5], 1):
-            print(f"{Fore.CYAN}{i}. {Fore.WHITE}{rec}")
+            print(f"{i}. {rec}")
         
         # Final Summary
         end_time = datetime.now()
@@ -244,35 +235,35 @@ def main():
         print_success(f"Results saved to: {config.OUTPUT_DIR}/")
         print_success(f"Charts saved to: {config.CHARTS_DIR}/")
         
-        print(f"\n{Fore.GREEN}{Style.BRIGHT}OUTPUT FILES:")
-        print(f"{Fore.WHITE}{'─'*80}")
-        print(f"{Fore.CYAN}Reports:")
-        print(f"  • {config.OUTPUT_DIR}/comprehensive_report.txt")
-        print(f"\n{Fore.CYAN}Data Files:")
-        print(f"  • {config.OUTPUT_DIR}/users_data.csv")
-        print(f"  • {config.OUTPUT_DIR}/devices_data.csv")
-        print(f"  • {config.OUTPUT_DIR}/applications_data.csv")
-        print(f"  • {config.OUTPUT_DIR}/breach_attempts.csv")
-        print(f"  • {config.OUTPUT_DIR}/usability_tests.csv")
-        print(f"  • {config.OUTPUT_DIR}/access_logs.csv")
-        print(f"  • {config.OUTPUT_DIR}/authentication_logs.csv")
-        print(f"\n{Fore.CYAN}Visualizations:")
-        print(f"  • {config.CHARTS_DIR}/executive_dashboard.png")
-        print(f"  • {config.CHARTS_DIR}/security_metrics.png")
-        print(f"  • {config.CHARTS_DIR}/usability_metrics.png")
-        print(f"  • {config.CHARTS_DIR}/comparative_analysis.png")
-        print(f"  • {config.CHARTS_DIR}/breach_analysis.png")
-        print(f"  • {config.CHARTS_DIR}/device_trust.png")
-        print(f"  • {config.CHARTS_DIR}/authentication.png")
+        print("\nOUTPUT FILES:")
+        print(f"{'─'*80}")
+        print("Reports:")
+        print(f"  - {config.OUTPUT_DIR}/comprehensive_report.txt")
+        print("\nData Files:")
+        print(f"  - {config.OUTPUT_DIR}/users_data.csv")
+        print(f"  - {config.OUTPUT_DIR}/devices_data.csv")
+        print(f"  - {config.OUTPUT_DIR}/applications_data.csv")
+        print(f"  - {config.OUTPUT_DIR}/breach_attempts.csv")
+        print(f"  - {config.OUTPUT_DIR}/usability_tests.csv")
+        print(f"  - {config.OUTPUT_DIR}/access_logs.csv")
+        print(f"  - {config.OUTPUT_DIR}/authentication_logs.csv")
+        print("\nVisualizations:")
+        print(f"  - {config.CHARTS_DIR}/executive_dashboard.png")
+        print(f"  - {config.CHARTS_DIR}/security_metrics.png")
+        print(f"  - {config.CHARTS_DIR}/usability_metrics.png")
+        print(f"  - {config.CHARTS_DIR}/comparative_analysis.png")
+        print(f"  - {config.CHARTS_DIR}/breach_analysis.png")
+        print(f"  - {config.CHARTS_DIR}/device_trust.png")
+        print(f"  - {config.CHARTS_DIR}/authentication.png")
         
-        print(f"\n{Fore.GREEN}{Style.BRIGHT}╔══════════════════════════════════════════════════════════════════════════════╗")
-        print(f"{Fore.GREEN}{Style.BRIGHT}║  ZERO TRUST ARCHITECTURE RESEARCH PROJECT COMPLETED SUCCESSFULLY!           ║")
-        print(f"{Fore.GREEN}{Style.BRIGHT}╚══════════════════════════════════════════════════════════════════════════════╝\n")
+        print("\n" + "="*80)
+        print("ZERO TRUST ARCHITECTURE RESEARCH PROJECT COMPLETED SUCCESSFULLY!")
+        print("="*80 + "\n")
         
         return 0
         
     except Exception as e:
-        print(f"\n{Fore.RED}{Style.BRIGHT}ERROR: {str(e)}")
+        print(f"\n[ERROR] {str(e)}")
         import traceback
         traceback.print_exc()
         return 1
